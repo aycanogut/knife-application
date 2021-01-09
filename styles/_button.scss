@@ -3,8 +3,6 @@
 .btn_def {
   display: inline-block;
   padding: 14px 30px;
-  font-family: $font-family-medium;
-  font-size: 16px;
   border: none;
   border-radius: 30px;
 
@@ -13,11 +11,9 @@
     color: white;
     @include transitions($args);
     filter: drop-shadow(0px 20px 50px #000 %10);
-    &:hover {
-      text-decoration: none;
-      color: white;
-      background-color: $color-woodsmoke;
-    }
+  }
+  &--nav:hover {
+    color: white;
   }
 
   &--colorful {
@@ -29,10 +25,6 @@
       $color-bright-sun 100%,
       $color-tickle-me-pink 100%
     );
-    &--colorful:hover {
-      color: $color-white;
-      filter: drop-shadow(0px 4px 40px #000 %25);
-    }
   }
   &--colorful:hover {
     color: white;
@@ -41,7 +33,20 @@
   }
 
   &--transparent {
-    background-color: none;
-    border: 1px solid $color-tickle-me-pink;
+    padding: 18px 27px;
+
+    color: $color-regent-gray;
+    border: 2px solid;
+    background: linear-gradient(white, white),
+      linear-gradient(to right, $color-tickle-me-pink, $color-bright-sun);
+    background-origin: padding-box, border-box;
+    background-repeat: no-repeat; /* this is important */
+    border: 3px solid transparent;
   }
+  &--transparent:hover {
+  }
+}
+
+.btn_def:hover {
+  text-decoration: none;
 }

@@ -1,8 +1,132 @@
 // typo
 
-h1.header--text {
+//h1
+h1.header__text {
   font-family: $font-family-bold;
   font-weight: $bold;
   font-size: 64px;
   color: $color-shark;
+}
+
+// features__text / pricing__text
+.heading-text {
+  font-family: $font-family-light;
+  font-weight: $light;
+  font-size: 48px;
+  color: $color-shark;
+}
+.heading-text-bold {
+  font-family: $font-family-medium;
+  font-weight: $medium;
+  font-size: 48px;
+  color: $color-shark;
+}
+
+// features__sub-text / pricing__sub-text
+.sub-text {
+  font-family: $font-family-regular;
+  font-weight: $regular;
+  font-size: 18px;
+  color: $color-regent-gray;
+}
+
+// features__card-text / pricing__card-text
+.small-text {
+  font-family: $font-family-light;
+  font-weight: $light;
+  font-size: 16px;
+  color: $color-slate-gray;
+}
+
+// pricing-card-title
+.card-title {
+  font-family: $font-family-medium;
+  font-weight: $medium;
+  font-size: 64px;
+  color: $color-woodersmoke;
+}
+
+// navbar-brand / navbar-brand--bold / navbar-link
+.navbar {
+  &__brand {
+    font-family: $font-family-light;
+    font-weight: $light;
+    font-size: 24px;
+    color: $color-regent-gray;
+  }
+  &__brand--bold {
+    font-family: $font-family-bold;
+    font-weight: $bold;
+    font-size: 24px;
+    color: $color-shark;
+  }
+
+  &__link {
+    font-family: $font-family-medium;
+    font-weight: $medium;
+    font-size: 14px;
+    color: $color-white;
+  }
+}
+
+// header__sub-text
+.header {
+  &__sub-text {
+    font-family: $font-family-regular;
+    font-weight: $regular;
+    font-size: 20px;
+    color: $color-regent-gray;
+  }
+}
+
+// pricing__list__item
+.pricing {
+  &__list__item {
+    font-family: $font-family-regular;
+    font-weight: $regular;
+    font-size: 14px;
+    color: $color-black-pearl;
+  }
+  &__contact {
+    font-family: $font-family-medium;
+    font-weight: $medium;
+    font-size: 14px;
+    color: $color-slate-gray;
+  }
+}
+
+// wave__text
+.wave__text {
+  font-family: $font-family-light;
+  font-weight: $light;
+  font-size: 32px;
+  color: $color-white;
+}
+
+// footer-title / footer-link / footer-text
+.footer {
+  &__title {
+    font-family: $font-family-medium;
+    font-weight: $medium;
+    font-size: 14px;
+    color: $color-shark;
+  }
+  &__link {
+    font-family: $font-family-regular;
+    font-weight: $regular;
+    font-size: 16px;
+    color: $color-regent-gray;
+  }
+  &__text {
+    font-family: $font-family-regular;
+    font-weight: $regular;
+    font-size: 14px;
+    color: $color-regent-gray;
+  }
+  .text-bold {
+    font-family: $font-family-regular;
+    font-weight: $regular;
+    font-size: 14px;
+    color: $color-shark;
+  }
 }
