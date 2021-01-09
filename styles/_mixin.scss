@@ -1,0 +1,20 @@
+// mixin
+
+// font
+@mixin font-face(
+  $font-name,
+  $font-folder,
+  $font-file-name,
+  $font-weight: 400,
+  $font-style: normal
+) {
+  @font-face {
+    font-family: $font-name;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    // src: local("#{$font-name}"), local("#{$font-file-name}"),
+    src: url("fonts/#{$font-folder}/#{$font-file-name}.woff2") format("woff2"),
+      url("fonts/#{$font-folder}/#{$font-file-name}.woff") format("woff"),
+      url("fonts/#{$font-folder}/#{$font-file-name}.ttf") format("truetype");
+  }
+}
