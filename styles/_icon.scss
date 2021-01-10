@@ -3,3 +3,17 @@
 .features--icon {
   display: block;
 }
+
+// pricing-card-list
+.icon--yes {
+  width: 24px;
+  height: 24px;
+  background: url("../img/yes.svg");
+  padding-bottom: 14px;
+}
+.icon--no {
+  width: 24px;
+  height: 24px;
+  background: url("../img/no.svg");
+  padding-bottom: 14px;
+}

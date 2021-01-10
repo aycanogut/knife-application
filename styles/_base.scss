@@ -1,6 +1,10 @@
 body {
   box-sizing: border-box;
   font-family: $font-family-regular;
-  overflow: visible;
+  overflow-x: hidden;
   text-decoration: none !important;
+}
+
+.card__list {
+  display: block;
 }

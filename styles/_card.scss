@@ -4,11 +4,39 @@
   width: 570px;
   height: 514px;
 
-  &__card-heading {
-    &__card-title {
-    }
+  &__heading {
+    display: flex;
   }
-}
+  &__title {
+    padding: 70px 0 5px 60px;
+  }
+  &__price {
+    padding: 90px 40px 0 100px;
+  }
+  &__text {
+    padding: 0 0 36px 60px;
+  }
 
-.card:hover {
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 0 60px 30px 60px;
+  }
+  &__list-item {
+    white-space: nowrap;
+    padding: 0px 0 14px 11px;
+  }
+
+  &__btn {
+    font-size: 14px;
+  }
+
+  .pricing__card-btn {
+    padding: 0 0 0 60px;
+    display: flex;
+  }
+
+  &__contact {
+    padding: 10px 0 0 30px;
+  }
 }
