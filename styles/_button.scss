@@ -10,7 +10,7 @@
     background-color: $color-woodsmoke;
     color: white;
     @include transitions($args);
-    filter: drop-shadow(0px 20px 50px #000 %10);
+    @include drop-shadow;
   }
   &--nav:hover {
     color: white;
@@ -19,16 +19,22 @@
   &--colorful {
     padding: 10px 20px;
     color: $color-white;
-    background-image: linear-gradient(
-      to top left,
-      $color-tickle-me-pink 0%,
-      $color-bright-sun 100%,
-      $color-tickle-me-pink 100%
-    );
+    @include gradient-bg;
   }
   &--colorful:hover {
     color: white;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+    @include hover-shadow;
+    text-decoration: none;
+  }
+
+  &--card {
+    padding: 10px 20px;
+    color: $color-white;
+    @include gradient-bg;
+    background-color: black;
+  }
+  &--card:hover {
+    color: white;
     text-decoration: none;
   }
 
@@ -40,7 +46,7 @@
     background: linear-gradient(white, white),
       linear-gradient(to right, $color-tickle-me-pink, $color-bright-sun);
     background-origin: padding-box, border-box;
-    background-repeat: no-repeat; /* this is important */
+    background-repeat: no-repeat;
     border: 3px solid transparent;
   }
   &--transparent:hover {

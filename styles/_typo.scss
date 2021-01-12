@@ -3,7 +3,6 @@
 //h1
 h1.header__text {
   font-family: $font-family-bold;
-  font-weight: $bold;
   font-size: 64px;
   color: $color-shark;
 }
@@ -11,7 +10,6 @@ h1.header__text {
 // features__sub-text / pricing__sub-text
 .sub-text {
   font-family: $font-family-regular;
-  font-weight: $regular;
   font-size: 18px;
   color: $color-regent-gray;
 }
@@ -19,29 +17,34 @@ h1.header__text {
 // features__card-text / pricing__card-text
 .small-text {
   font-family: $font-family-light;
-  font-weight: $light;
   font-size: 16px;
   color: $color-slate-gray;
+}
+
+// header__sub-text
+.header {
+  &__sub-text {
+    font-family: $font-family-regular;
+    font-size: 20px;
+    color: $color-regent-gray;
+  }
 }
 
 // navbar-brand / navbar-brand--bold / navbar-link
 .navbar {
   &__brand {
     font-family: $font-family-light;
-    font-weight: $light;
     font-size: 24px;
     color: $color-regent-gray;
   }
   &__brand--bold {
     font-family: $font-family-bold;
-    font-weight: $bold;
     font-size: 24px;
     color: $color-shark;
   }
 
   &__link {
     font-family: $font-family-medium;
-    font-weight: $medium;
     font-size: 14px;
     color: $color-white;
   }
@@ -54,9 +57,9 @@ h1.header__text {
   font-size: 48px;
   color: $color-shark;
 }
+
 .heading-text-bold {
   font-family: $font-family-medium;
-  font-weight: $medium;
   font-size: 48px;
   color: $color-shark;
 }
@@ -64,32 +67,19 @@ h1.header__text {
 // pricing-card-title
 .card__title {
   font-family: $font-family-medium;
-  font-weight: $medium;
   font-size: 64px;
   color: $color-woodersmoke;
-}
-
-// header__sub-text
-.header {
-  &__sub-text {
-    font-family: $font-family-regular;
-    font-weight: $regular;
-    font-size: 20px;
-    color: $color-regent-gray;
-  }
 }
 
 // pricing__list-item / card__contact / card__price--month
 .pricing {
   .card__list-item {
-    font-family: $font-family-regular;
-    font-weight: $regular;
+    font-family: $font-family-light;
     font-size: 14px;
     color: $color-black-pearl;
   }
   .card__contact {
     font-family: $font-family-medium;
-    font-weight: $medium;
     font-size: 14px;
     color: $color-slate-gray;
   }
@@ -100,7 +90,6 @@ h1.header__text {
   }
   &__card__price--month {
     font-family: $font-family-regular;
-    font-weight: $regular;
     font-size: 12px;
     color: $color-black-pearl;
   }
@@ -109,7 +98,6 @@ h1.header__text {
 // wave__text
 .wave__text {
   font-family: $font-family-light;
-  font-weight: $light;
   font-size: 32px;
   color: $color-white;
 }
@@ -118,25 +106,21 @@ h1.header__text {
 .footer {
   &__title {
     font-family: $font-family-medium;
-    font-weight: $medium;
     font-size: 14px;
     color: $color-shark;
   }
   &__link {
     font-family: $font-family-regular;
-    font-weight: $regular;
     font-size: 16px;
     color: $color-regent-gray;
   }
   &__text {
     font-family: $font-family-regular;
-    font-weight: $regular;
     font-size: 14px;
     color: $color-regent-gray;
   }
   .text-bold {
     font-family: $font-family-regular;
-    font-weight: $regular;
     font-size: 14px;
     color: $color-shark;
   }

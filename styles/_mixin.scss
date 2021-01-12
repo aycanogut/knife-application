@@ -1,20 +1,107 @@
 // mixin
 
-// font
-@mixin font-face(
-  $font-name,
-  $font-folder,
-  $font-file-name,
-  $font-weight: 400,
-  $font-style: normal
-) {
-  @font-face {
-    font-family: $font-name;
-    font-weight: $font-weight;
-    font-style: $font-style;
-    // src: local("#{$font-name}"), local("#{$font-file-name}"),
-    src: url("fonts/#{$font-folder}/#{$font-file-name}.woff2") format("woff2"),
-      url("fonts/#{$font-folder}/#{$font-file-name}.woff") format("woff"),
-      url("fonts/#{$font-folder}/#{$font-file-name}.ttf") format("truetype");
-  }
+// transition
+$args: all 0.3s ease-in;
+
+@mixin transitions($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// card-bg-transition
+$card-bg-transition: all 0s;
+
+@mixin transition($card-bg-transition) {
+  -webkit-transition: $card-bg-transition;
+  -moz-transition: $card-bg-transition;
+  -o-transition: $card-bg-transition;
+  transition: $card-bg-transition;
+}
+
+// box-shadow
+// btn-colorful
+@mixin hover-shadow {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+}
+
+// pricing__card--shadow
+@mixin card-shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+//pricing__card--shadow:hover
+@mixin card-shadow--hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+// drop-shadow
+// nav-btn
+@mixin drop-shadow {
+  filter: drop-shadow(0px 20px 50px #000 %10);
+}
+
+// gradient-background
+// hero-btn / kullanıoldığı diğer yerleri yaz ve bu rengi daha fazla orjinaline benzetmeye çalış
+@mixin gradient-bg {
+  // background-image: -moz-linear-gradient(
+  //   to bottom left,
+  //   $color-tickle-me-pink 100%,
+  //   $color-bright-sun 100%,
+  //   $color-tickle-me-pink 100%
+  // );
+  // background-image: -webkit--gradient(
+  //   to top left,
+  //   $color-tickle-me-pink 0%,
+  //   $color-bright-sun 100%,
+  //   $color-tickle-me-pink 100%
+  // );
+  // background-image: -webkit-linear-gradient(
+  //   to top left,
+  //   $color-tickle-me-pink 0%,
+  //   $color-bright-sun 100%,
+  //   $color-tickle-me-pink 100%
+  // );
+  // background-image: -o-linear-gradient(
+  //   to top left,
+  //   $color-tickle-me-pink 0%,
+  //   $color-bright-sun 100%,
+  //   $color-tickle-me-pink 100%
+  // );
+  background-image: linear-gradient(
+    to top left,
+    $color-bright-sun -100%,
+    $color-tickle-me-pink 05%,
+    $color-bright-sun 120%
+  );
+}
+
+// pricing__card hover --> btn white bg
+@mixin white-bg {
+  background-image: -moz-linear-gradient(
+    to top left,
+    $color-white 0%,
+    $color-white 100%
+  );
+  background-image: -webkit-linear-gradient(
+    to top left,
+    $color-white 0%,
+    $color-white 100%
+  );
+  background-image: -webkit-gradient(
+    to top left,
+    $color-white 0%,
+    $color-white 100%
+  );
+  background-image: -o-linear-gradient(
+    to top left,
+    $color-white 0%,
+    $color-white 100%
+  );
+  background-image: linear-gradient(
+    to top left,
+    $color-white 0%,
+    $color-white 100%
+  );
 }

@@ -4,27 +4,38 @@
   width: 570px;
   height: 514px;
 
+  @include card-shadow;
+  border: none;
+  border-radius: 10px;
+
   &__heading {
     display: flex;
+    padding-top: 65px;
   }
   &__title {
-    padding: 70px 0 5px 60px;
+    padding: 0 0 0 60px;
   }
   &__price {
-    padding: 90px 40px 0 100px;
+    padding: 22px 40px 0 95px;
   }
   &__text {
-    padding: 0 0 36px 60px;
+    padding: 0 0 30px 60px;
+    margin-top: -4px;
   }
 
   &__list {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    padding: 0 60px 30px 60px;
+    padding: 0 70px 30px 60px;
+    margin-bottom: 10px;
   }
   &__list-item {
     white-space: nowrap;
-    padding: 0px 0 14px 11px;
+    padding: 0px 0 19px 20px;
+  }
+
+  &__col:nth-child(2) {
+    margin-left: -57px;
   }
 
   &__btn {
@@ -32,11 +43,55 @@
   }
 
   .pricing__card-btn {
-    padding: 0 0 0 60px;
+    padding: 0 0 60px 60px;
     display: flex;
   }
 
   &__contact {
     padding: 10px 0 0 30px;
+  }
+
+  &:hover {
+    @include gradient-bg;
+    @include card-shadow--hover;
+    width: 570px;
+    height: 574px;
+    position: relative;
+    top: -30px;
+
+    @include transition($card-bg-transition);
+
+    .card__title,
+    .card__price,
+    .pricing__card__price--month,
+    .card__text,
+    .card__list-item,
+    .card__contact {
+      color: $color-white;
+    }
+
+    // pozisyonu tekrardan normal hale getirmek için
+    .card__heading {
+      margin-top: 30px;
+    }
+
+    // icon hover color switch
+    .icon {
+      &--yes {
+        background: url("../img/icon-yes-white.svg");
+      }
+      &--no {
+        background: url("../img/icon-no-white.svg");
+      }
+    }
+
+    .pricing__card__bottom {
+      .pricing__card-btn {
+        .btn_def {
+          color: $color-tickle-me-pink;
+          @include white-bg;
+        }
+      }
+    }
   }
 }
