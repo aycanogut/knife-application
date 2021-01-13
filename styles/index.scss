@@ -1,11 +1,24 @@
 // global stylesheet
-@import "variables";
-@import "normalize";
-@import "mixin";
-@import "base";
-@import "color";
-@import "button";
-@import "card";
-@import "font";
-@import "typo";
-@import "icon";
+
+// base
+@import "base/normalize";
+@import "base/base";
+@import "base/typo";
+
+// utils
+@import "utils/variables";
+@import "utils/mixin";
+@import "utils/fonts";
+
+// components
+@import "components/card";
+@import "components/icon";
+@import "components/button";
+
+// section
+@import "sections/nav";
+@import "sections/header";
+@import "sections/features";
+@import "sections/pricing";
+@import "sections/wave";
+@import "sections/footer";
