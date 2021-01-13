@@ -39,7 +39,7 @@ $card-bg-transition: all 0s;
 // drop-shadow
 // nav-btn
 @mixin drop-shadow {
-  filter: drop-shadow(0px 20px 50px #000 %10);
+  filter: drop-shadow(0px 22px 30px rgba(000, 000, 000, 0.4));
 }
 
 // gradient-background

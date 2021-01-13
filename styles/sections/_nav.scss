@@ -1,0 +1,27 @@
+// nav
+
+.navbar {
+  // font-family: $font-family;
+  background-color: $color-bright-sun;
+  padding: 0;
+
+  &__brand {
+    padding: 30px 0 0 135px;
+  }
+
+  &__menu {
+    padding: 60px 135px 0 0;
+  }
+
+  &__link {
+    padding: 0 19px 0 18px;
+  }
+
+  &__link:hover {
+    color: $color-tickle-me-pink;
+  }
+
+  &__link:nth-child(3) {
+    padding-right: 38px;
+  }
+}

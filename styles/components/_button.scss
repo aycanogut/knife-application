@@ -2,11 +2,12 @@
 
 .btn_def {
   display: inline-block;
-  padding: 14px 30px;
   border: none;
   border-radius: 30px;
 
   &--nav {
+    padding: 17px 31px 12px 31px;
+    margin-bottom: 10px;
     background-color: $color-woodsmoke;
     color: white;
     @include transitions($args);
@@ -17,7 +18,7 @@
   }
 
   &--colorful {
-    padding: 10px 20px;
+    padding: 21px 31px 16px 30px;
     color: $color-white;
     @include gradient-bg;
   }
@@ -27,28 +28,46 @@
     text-decoration: none;
   }
 
-  &--card {
-    padding: 10px 20px;
-    color: $color-white;
-    @include gradient-bg;
-    background-color: black;
-  }
-  &--card:hover {
-    color: white;
-    text-decoration: none;
-  }
-
   &--transparent {
-    padding: 18px 27px;
-
+    padding: 19px 29px 13px 29px;
     color: $color-regent-gray;
-    border: 2px solid;
-    background: linear-gradient(white, white),
-      linear-gradient(to right, $color-tickle-me-pink, $color-bright-sun);
-    background-origin: padding-box, border-box;
-    background-repeat: no-repeat;
-    border: 3px solid transparent;
+    background: linear-gradient(#fff, #fff) padding-box,
+      /*this is your grey background*/
+        linear-gradient(
+          to top left,
+          $color-bright-sun -100%,
+          $color-tickle-me-pink 05%,
+          $color-bright-sun 120%
+        )
+        border-box;
+
+    border: 2px solid transparent;
+    border-radius: 50px;
+
+    &--card {
+      padding: 10px 20px;
+      color: $color-white;
+      @include gradient-bg;
+      background-color: black;
+    }
+    &--card:hover {
+      color: white;
+      text-decoration: none;
+    }
+
+    // color: $color-regent-gray;
+    // // border: 2px solid;
+    // // background: linear-gradient(white, white),
+    // //   linear-gradient(to right, $color-tickle-me-pink, $color-bright-sun);
+    // // background-origin: padding-box, border-box;
+    // // background-repeat: no-repeat;
+    // // border: 3px solid transparent;
+    // background-color: wheat;
   }
+
+  &--transparent::before {
+  }
+
   &--transparent:hover {
   }
 }

@@ -1,0 +1,21 @@
+// header
+
+.header {
+  font-family: $font-family;
+
+  &__left {
+    padding: 142px 0 0 120px;
+  }
+
+  &__text {
+    margin: 42.88px 0 32px 0;
+  }
+
+  &__sub-text {
+    padding-bottom: 49px;
+  }
+
+  &__btn:nth-child(2) {
+    margin-left: 19px;
+  }
+}

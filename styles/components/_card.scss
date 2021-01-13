@@ -24,18 +24,18 @@
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
     padding: 0 70px 30px 60px;
     margin-bottom: 10px;
   }
   &__list-item {
+    margin-top: -20px;
+
     white-space: nowrap;
-    padding: 0px 0 19px 20px;
+    padding: 0px 0 19px 35px;
   }
 
   &__col:nth-child(2) {
-    margin-left: -57px;
+    margin-left: -43px;
   }
 
   &__btn {

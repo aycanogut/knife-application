@@ -3,6 +3,7 @@ h1.header__text {
   font-family: $font-family;
   font-weight: $bold;
   font-size: 64px;
+  line-height: 75px;
   color: $color-shark;
 }
 
@@ -12,6 +13,7 @@ h1.header__text {
   font-weight: $regular;
   font-size: 18px;
   color: $color-regent-gray;
+  line-height: 26px;
 }
 
 // features__card-text / pricing__card-text
@@ -32,10 +34,26 @@ h1.header__text {
   }
 }
 
+// buttons
+// nav-btn
+.btn_def--nav {
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: $light;
+  color: $color-white;
+}
+
+// header-btns
+.btn_def--colorful,
+.btn_def--transparent {
+  font-size: 16;
+}
+
 // navbar-brand / navbar-brand--bold / navbar-link
 .navbar {
   &__brand {
     font-family: $font-family;
+    font-weight: $light;
     font-size: 24px;
     color: $color-regent-gray;
   }
@@ -102,6 +120,14 @@ h1.header__text {
     font-size: 12px;
     color: $color-black-pearl;
   }
+}
+
+// features
+// card-title
+.features__card-title {
+  font-family: $font-family;
+  font-weight: $regular;
+  font-size: 14px;
 }
 
 // wave__text
