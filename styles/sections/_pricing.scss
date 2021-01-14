@@ -1,12 +1,22 @@
+// pricing
+
 .pricing {
   font-family: $font-family;
 
   &__heading {
     text-align: center;
-    padding: 190px 200px 0 200px;
+    padding: 200px 200px 0 200px;
   }
 
   &__sub-text {
     padding: 28px 0 58px 0;
+  }
+
+  .card {
+    margin: 25px auto 20px auto;
+  }
+
+  &__row {
+    margin: 0 105px;
   }
 }

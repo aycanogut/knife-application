@@ -2,7 +2,6 @@
 
 .navbar {
   // font-family: $font-family;
-  background-color: $color-bright-sun;
   padding: 0;
 
   &__brand {
@@ -18,7 +17,7 @@
   }
 
   &__link:hover {
-    color: $color-tickle-me-pink;
+    color: $color-black;
   }
 
   &__link:nth-child(3) {

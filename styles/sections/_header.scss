@@ -18,4 +18,14 @@
   &__btn:nth-child(2) {
     margin-left: 19px;
   }
+
+  &__right {
+    margin-left: 350px;
+  }
+
+  &__screen {
+    position: absolute;
+    top: -45px;
+    right: 0px;
+  }
 }

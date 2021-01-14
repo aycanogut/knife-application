@@ -54,10 +54,6 @@
   &:hover {
     @include gradient-bg;
     @include card-shadow--hover;
-    width: 570px;
-    height: 574px;
-    position: relative;
-    top: -30px;
 
     @include transition($card-bg-transition);
 
@@ -68,11 +64,6 @@
     .card__list-item,
     .card__contact {
       color: $color-white;
-    }
-
-    // pozisyonu tekrardan normal hale getirmek için
-    .card__heading {
-      margin-top: 30px;
     }
 
     // icon hover color switch

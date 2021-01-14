@@ -1,5 +1,23 @@
 // wave
 
 .wave {
+  height: 678px;
   font-family: $font-family;
+  margin: 265px 0;
+
+  background: url("../img/wave-bg.svg") -290px, no-repeat,
+    url("../img/wave-bg-gray.svg") -152px top, no-repeat;
+
+  &__left {
+    display: flex;
+    margin: 323px 0 0 121px;
+  }
+
+  &__icon {
+    margin-right: 20px;
+  }
+
+  &__buttons {
+    margin: 323px 0 0 121px;
+  }
 }
