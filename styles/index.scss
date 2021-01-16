@@ -3,12 +3,12 @@
 // base
 @import "base/normalize";
 @import "base/base";
-@import "base/typo";
+@import "base/fonts";
 
 // utilities
 @import "utils/variables";
 @import "utils/mixin";
-@import "utils/fonts";
+@import "utils/typo";
 
 // components
 @import "components/card";

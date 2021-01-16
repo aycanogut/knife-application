@@ -1,5 +1,19 @@
 // typo
 
+// thin
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/thin/Roboto-Thin.eot");
+  src: url("../fonts/roboto/thin/Roboto-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/roboto/thin/Roboto-Thin.svg#Robohhinin") format("svg"),
+    url("../fonts/roboto/thin/Roboto-Thin.ttf") format("truetype"),
+    url("../fonts/roboto/thin/Roboto-Thin.woff") format("woff"),
+    url("../fonts/roboto/thin/Roboto-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
 // light
 @font-face {
   font-family: "Roboto";

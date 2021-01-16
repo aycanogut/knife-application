@@ -10,11 +10,13 @@
     margin-bottom: 10px;
     background-color: $color-woodsmoke;
     color: white;
-    @include transitions($args);
+
     @include drop-shadow;
   }
   &--nav:hover {
-    color: white;
+    transform: scale(1.06);
+    @include transitions($args);
+    color: $color-white;
   }
 
   &--colorful {
@@ -25,7 +27,7 @@
   &--colorful:hover {
     color: white;
     @include hover-shadow;
-    text-decoration: none;
+    @include transitions($args);
   }
 
   &--transparent {
@@ -43,35 +45,41 @@
 
     border: 2px solid transparent;
     border-radius: 50px;
-
-    &--card {
-      padding: 10px 20px;
-      color: $color-white;
-      @include gradient-bg;
-      background-color: black;
-    }
-    &--card:hover {
-      color: white;
-      text-decoration: none;
-    }
-
-    // color: $color-regent-gray;
-    // // border: 2px solid;
-    // // background: linear-gradient(white, white),
-    // //   linear-gradient(to right, $color-tickle-me-pink, $color-bright-sun);
-    // // background-origin: padding-box, border-box;
-    // // background-repeat: no-repeat;
-    // // border: 3px solid transparent;
-    // background-color: wheat;
-  }
-
-  &--transparent::before {
   }
 
   &--transparent:hover {
+    color: $color-regent-gray;
   }
-}
 
-.btn_def:hover {
-  text-decoration: none;
+  &--card {
+    padding: 10px 20px;
+    color: $color-white;
+    @include gradient-bg;
+    @include drop-shadow;
+  }
+  &--card:hover {
+    color: white;
+  }
+
+  &--wave-white {
+    padding: 17px 48px 12px 49px;
+    background-color: $color-white;
+    color: $color-tickle-me-pink;
+    @include drop-shadow;
+  }
+
+  &--wave-white:hover {
+    color: $color-black;
+  }
+
+  &--wave-transparent {
+    padding: 15px 39px 12px 38px;
+    border: 2px solid $color-white;
+    background-color: transparent;
+    color: $color-white;
+  }
+
+  &--wave-transparent:hover {
+    color: $color-black;
+  }
 }

@@ -3,7 +3,6 @@
 .card {
   width: 570px;
   height: 514px;
-
   @include card-shadow;
   border: none;
   border-radius: 10px;
@@ -51,11 +50,11 @@
     padding: 10px 0 0 30px;
   }
 
+  // card-hover
   &:hover {
-    @include gradient-bg;
-    @include card-shadow--hover;
-
-    @include transition($card-bg-transition);
+    .card__list-item {
+      color: $color-white;
+    }
 
     .card__title,
     .card__price,
@@ -64,9 +63,11 @@
     .card__list-item,
     .card__contact {
       color: $color-white;
+      z-index: 1;
     }
 
     // icon hover color switch
+
     .icon {
       &--yes {
         background: url("../img/icon-yes-white.svg");
@@ -85,6 +86,25 @@
       }
     }
   }
+}
+
+// background-scale, ve gradient
+.card::before {
+  content: " ";
+  position: absolute;
+  border-radius: 10px;
+
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover::before {
+  @include gradient-bg;
+  @include card-shadow--hover;
+  @include transition($card-bg-transition);
+
+  transform: scaleY(1.1);
+  @include transitions($args);
 }
 
 .card__list {

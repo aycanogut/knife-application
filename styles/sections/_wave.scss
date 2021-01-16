@@ -3,10 +3,13 @@
 .wave {
   height: 678px;
   font-family: $font-family;
-  margin: 265px 0;
+  margin: 265px 0 203px 0;
 
-  background: url("../img/wave-bg.svg") -290px, no-repeat,
-    url("../img/wave-bg-gray.svg") -152px top, no-repeat;
+  // background: url("../img/wave-bg.svg") -290px, no-repeat fixed center,
+  //   url("../img/wave-bg-gray.svg") -152px top, no-repeat fixed center;
+
+  background: url("../img/wave-bg.svg") no-repeat center,
+    url("../img/wave-bg-gray.svg") no-repeat center;
 
   &__left {
     display: flex;
@@ -18,6 +21,10 @@
   }
 
   &__buttons {
-    margin: 323px 0 0 121px;
+    margin: 321px 0 0 190px;
+  }
+
+  &__btn {
+    margin: 0 12px;
   }
 }

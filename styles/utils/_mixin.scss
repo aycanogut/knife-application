@@ -43,32 +43,32 @@ $card-bg-transition: all 0s;
 }
 
 // gradient-background
-// hero-btn / kullanıoldığı diğer yerleri yaz ve bu rengi daha fazla orjinaline benzetmeye çalış
+// header-btn / card-hover-bg / card-btn
 @mixin gradient-bg {
-  // background-image: -moz-linear-gradient(
-  //   to bottom left,
-  //   $color-tickle-me-pink 100%,
-  //   $color-bright-sun 100%,
-  //   $color-tickle-me-pink 100%
-  // );
-  // background-image: -webkit--gradient(
-  //   to top left,
-  //   $color-tickle-me-pink 0%,
-  //   $color-bright-sun 100%,
-  //   $color-tickle-me-pink 100%
-  // );
-  // background-image: -webkit-linear-gradient(
-  //   to top left,
-  //   $color-tickle-me-pink 0%,
-  //   $color-bright-sun 100%,
-  //   $color-tickle-me-pink 100%
-  // );
-  // background-image: -o-linear-gradient(
-  //   to top left,
-  //   $color-tickle-me-pink 0%,
-  //   $color-bright-sun 100%,
-  //   $color-tickle-me-pink 100%
-  // );
+  background-image: -moz-linear-gradient(
+    to bottom left,
+    $color-bright-sun -100%,
+    $color-tickle-me-pink 05%,
+    $color-bright-sun 120%
+  );
+  background-image: -webkit--gradient(
+    to top left,
+    $color-bright-sun -100%,
+    $color-tickle-me-pink 05%,
+    $color-bright-sun 120%
+  );
+  background-image: -webkit-linear-gradient(
+    to top left,
+    $color-bright-sun -100%,
+    $color-tickle-me-pink 05%,
+    $color-bright-sun 120%
+  );
+  background-image: -o-linear-gradient(
+    to top left,
+    $color-bright-sun -100%,
+    $color-tickle-me-pink 05%,
+    $color-bright-sun 120%
+  );
   background-image: linear-gradient(
     to top left,
     $color-bright-sun -100%,
@@ -77,7 +77,7 @@ $card-bg-transition: all 0s;
   );
 }
 
-// pricing__card hover --> btn white bg
+// pricing__card hover --> btn_white_bg
 @mixin white-bg {
   background-image: -moz-linear-gradient(
     to top left,

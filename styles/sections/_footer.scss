@@ -2,4 +2,28 @@
 
 .footer {
   font-family: $font-family;
+
+  &__row {
+    padding: 0 120px;
+  }
+
+  &__title {
+    padding-bottom: 12px;
+  }
+
+  &__list {
+    padding: 6px 0;
+  }
+
+  &__link:hover {
+    color: $color-black;
+  }
+
+  &__text {
+    margin: 88px 135px 181px 121px;
+  }
+
+  .text-bold {
+    margin-left: 0;
+  }
 }
