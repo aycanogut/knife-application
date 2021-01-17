@@ -5,13 +5,16 @@
   padding: 0;
 
   &__brand {
-    padding: 30px 0 0 135px;
+    padding: 30px 0 0 136px;
   }
 
   &__menu {
     padding: 60px 135px 0 0;
   }
 
+  &__list {
+    margin-left: 1px;
+  }
   &__link {
     padding: 0 19px 0 18px;
   }

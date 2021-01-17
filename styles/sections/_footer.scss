@@ -4,11 +4,12 @@
   font-family: $font-family;
 
   &__row {
+    margin-top: -1px;
     padding: 0 120px;
   }
 
   &__title {
-    padding-bottom: 12px;
+    padding-bottom: 10px;
   }
 
   &__list {
@@ -20,7 +21,7 @@
   }
 
   &__text {
-    margin: 88px 135px 181px 121px;
+    margin: 89px 135px 181px 121px;
   }
 
   .text-bold {

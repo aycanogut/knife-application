@@ -6,15 +6,15 @@
   border-radius: 30px;
 
   &--nav {
-    padding: 17px 31px 12px 31px;
+    padding: 18px 31px 13px 31px;
     margin-bottom: 10px;
     background-color: $color-woodsmoke;
     color: white;
 
-    @include drop-shadow;
+    @include drop-shadow($nav-btn);
   }
   &--nav:hover {
-    transform: scale(1.06);
+    transform: scale(1.04);
     @include transitions($args);
     color: $color-white;
   }
@@ -31,7 +31,7 @@
   }
 
   &--transparent {
-    padding: 19px 29px 13px 29px;
+    padding: 19px 29px 14px 28px;
     color: $color-regent-gray;
     background: linear-gradient(#fff, #fff) padding-box,
       /*this is your grey background*/
@@ -45,6 +45,7 @@
 
     border: 2px solid transparent;
     border-radius: 50px;
+    font-weight: $regular;
   }
 
   &--transparent:hover {
@@ -52,20 +53,20 @@
   }
 
   &--card {
-    padding: 10px 20px;
+    padding: 11px 21px 8px 21px;
     color: $color-white;
-    @include gradient-bg;
-    @include drop-shadow;
+    @include card-btn-gradient;
+    @include drop-shadow($card-btn);
   }
   &--card:hover {
     color: white;
   }
 
   &--wave-white {
-    padding: 17px 48px 12px 49px;
+    padding: 18px 50px 13px 50px;
     background-color: $color-white;
     color: $color-tickle-me-pink;
-    @include drop-shadow;
+    @include drop-shadow($card-btn);
   }
 
   &--wave-white:hover {
@@ -73,7 +74,7 @@
   }
 
   &--wave-transparent {
-    padding: 15px 39px 12px 38px;
+    padding: 16px 37px 11px 38px;
     border: 2px solid $color-white;
     background-color: transparent;
     color: $color-white;

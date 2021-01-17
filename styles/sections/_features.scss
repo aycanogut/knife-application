@@ -7,7 +7,7 @@
   &__heading {
     text-align: center;
     padding: 0 200px 0 200px;
-    margin-top: 332px;
+    margin-top: 333px;
   }
 
   &__sub-text {
@@ -19,10 +19,11 @@
   }
 
   &__card-title {
-    margin-top: -8px;
+    margin-top: -10px;
   }
 
   &__card-text {
-    padding: 10px 0 10px 0;
+    padding: 7px 0 10px 0;
+    letter-spacing: 0.1px;
   }
 }

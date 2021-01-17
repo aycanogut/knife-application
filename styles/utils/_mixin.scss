@@ -1,6 +1,7 @@
 // mixin
 
-// transition
+// !transitions
+
 $args: all 0.3s ease-in;
 
 @mixin transitions($args) {
@@ -11,7 +12,7 @@ $args: all 0.3s ease-in;
 }
 
 // card-bg-transition
-$card-bg-transition: all 0s;
+$card-bg-transition: all 0.2s;
 
 @mixin transition($card-bg-transition) {
   -webkit-transition: $card-bg-transition;
@@ -20,60 +21,112 @@ $card-bg-transition: all 0s;
   transition: $card-bg-transition;
 }
 
-// box-shadow
-// btn-colorful
+// !box-shadows
+
+// header-btn-colorful
+
+$btn-colorful: 0 15px 35px rgba(0, 0, 0, 0.3);
+
 @mixin hover-shadow {
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: $btn-colorful;
+  -moz-box-shadow: $btn-colorful;
+  box-shadow: $btn-colorful;
 }
 
 // pricing__card--shadow
+$card-shadow: rgba(0, 0, 0, 0.11) 0px 10px 50px;
 @mixin card-shadow {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  -webkit-box-shadow: $card-shadow;
+  -moz-box-shadow: $card-shadow;
+  box-shadow: $card-shadow;
 }
 
 //pricing__card--shadow:hover
+$card-shadow-hover: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
 @mixin card-shadow--hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  -webkit-box-shadow: $card-shadow-hover;
+  -moz-box-shadow: $card-shadow-hover;
+  box-shadow: $card-shadow-hover;
 }
 
-// drop-shadow
-// nav-btn
-@mixin drop-shadow {
-  filter: drop-shadow(0px 22px 30px rgba(000, 000, 000, 0.4));
+// !drop-shadows
+
+// nav-btn-shadow
+
+$nav-btn: drop-shadow(0px 20px 25px rgba(000, 000, 000, 0.4));
+
+@mixin drop-shadow($nav-btn) {
+  -webkit-filter: $nav-btn;
+  filter: $nav-btn;
 }
 
-// gradient-background
+// card-btn-shadow
+
+$card-btn: drop-shadow(0px 10px 10px rgba(000, 000, 000, 0.22));
+
+@mixin drop-shadow($card-btn) {
+  -webkit-filter: $card-btn;
+  filter: $card-btn;
+}
+
+// !gradient-background
+
 // header-btn / card-hover-bg / card-btn
 @mixin gradient-bg {
   background-image: -moz-linear-gradient(
     to bottom left,
-    $color-bright-sun -100%,
-    $color-tickle-me-pink 05%,
+    to top left,
+    $color-tickle-me-pink 10%,
     $color-bright-sun 120%
   );
   background-image: -webkit--gradient(
     to top left,
-    $color-bright-sun -100%,
-    $color-tickle-me-pink 05%,
+    $color-tickle-me-pink 10%,
     $color-bright-sun 120%
   );
   background-image: -webkit-linear-gradient(
     to top left,
-    $color-bright-sun -100%,
-    $color-tickle-me-pink 05%,
+    $color-tickle-me-pink 10%,
     $color-bright-sun 120%
   );
   background-image: -o-linear-gradient(
     to top left,
-    $color-bright-sun -100%,
-    $color-tickle-me-pink 05%,
+    $color-tickle-me-pink 10%,
     $color-bright-sun 120%
   );
   background-image: linear-gradient(
     to top left,
-    $color-bright-sun -100%,
-    $color-tickle-me-pink 05%,
+    $color-tickle-me-pink 10%,
     $color-bright-sun 120%
+  );
+}
+
+// pricing-card-btn
+@mixin card-btn-gradient {
+  background-image: -moz-linear-gradient(
+    to top left,
+    $color-tickle-me-pink 30%,
+    $color-bright-sun 110%
+  );
+  background-image: -webkit--gradient(
+    to top left,
+    $color-tickle-me-pink 30%,
+    $color-bright-sun 110%
+  );
+  background-image: -webkit-linear-gradient(
+    to top left,
+    $color-tickle-me-pink 30%,
+    $color-bright-sun 110%
+  );
+  background-image: -o-linear-gradient(
+    to top left,
+    $color-tickle-me-pink 30%,
+    $color-bright-sun 110%
+  );
+  background-image: linear-gradient(
+    to top left,
+    $color-tickle-me-pink 30%,
+    $color-bright-sun 110%
   );
 }
 
