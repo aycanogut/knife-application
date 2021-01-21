@@ -10,7 +10,6 @@
     margin-bottom: 10px;
     background-color: $color-woodsmoke;
     color: white;
-
     @include drop-shadow($nav-btn);
   }
   &--nav:hover {
