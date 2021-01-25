@@ -6,7 +6,7 @@
   border-radius: 30px;
 
   &--nav {
-    padding: 18px 31px 13px 31px;
+    padding: 17px 30px 14px 29px;
     margin-bottom: 10px;
     background-color: $color-woodsmoke;
     color: white;
@@ -19,7 +19,7 @@
   }
 
   &--colorful {
-    padding: 21px 31px 16px 30px;
+    padding: 21px 28px 16px 28px;
     color: $color-white;
     @include gradient-bg;
   }
@@ -30,7 +30,7 @@
   }
 
   &--transparent {
-    padding: 19px 29px 14px 28px;
+    padding: 19px 27px 14px 26px;
     color: $color-regent-gray;
     background: linear-gradient(#fff, #fff) padding-box,
       /*this is your grey background*/
@@ -62,7 +62,7 @@
   }
 
   &--wave-white {
-    padding: 18px 50px 13px 50px;
+    padding: 18px 49px 13px 50px;
     background-color: $color-white;
     color: $color-tickle-me-pink;
     @include drop-shadow($card-btn);
@@ -73,7 +73,7 @@
   }
 
   &--wave-transparent {
-    padding: 16px 37px 11px 38px;
+    padding: 16px 38px 11px 38px;
     border: 2px solid $color-white;
     background-color: transparent;
     color: $color-white;

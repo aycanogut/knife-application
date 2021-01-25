@@ -1,211 +1,304 @@
 // typo
 
-// navbar-brand / navbar-brand--bold / navbar-link
-.navbar {
-  &__brand {
-    font-family: $font-family;
-    font-weight: $thin;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: $color-regent-gray;
-  }
-  &__brand--bold {
-    font-family: $font-family;
-    font-weight: $bold;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.1px;
-    color: $color-shark;
-  }
+$font-family: "Roboto", sans-serif;
 
-  &__link {
-    font-family: $font-family;
-    font-weight: $regular;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 0.1px;
-    color: $color-white;
-  }
+// font-size
+.font-12 {
+  font-size: 12px;
 }
 
-// h1
-h1.header__text {
-  font-family: $font-family;
-  font-weight: $bold;
-  font-size: 64px;
-  line-height: 75px;
-  color: $color-shark;
+.font-14 {
+  font-size: 14px;
 }
 
-// header__sub-text
-.header {
-  &__sub-text {
-    font-family: $font-family;
-    font-weight: $light;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0.1px;
-    color: $color-regent-gray;
-  }
+.font-16 {
+  font-size: 16px;
 }
 
-// features__text / pricing__text
-.heading-text {
-  font-family: $font-family;
-  font-weight: $light;
-  font-size: 48px;
-  line-height: 57px;
-  color: $color-shark;
-}
-
-// features__text-bold / pricing__text-bold
-
-.heading-text-bold {
-  font-family: $font-family;
-  font-weight: $medium;
-  font-size: 48px;
-  line-height: 57px;
-  color: $color-shark;
-}
-
-// features__sub-text / pricing__sub-text
-.sub-text {
-  font-family: $font-family;
-  font-weight: $light;
+.font-18 {
   font-size: 18px;
-  color: $color-regent-gray;
-  line-height: 26px;
-  letter-spacing: 0.1px;
 }
 
-// features__card-text / pricing__card-text
-.small-text {
-  font-family: $font-family;
-  font-weight: $thin;
-  font-size: 16px;
-  line-height: 19px;
-  color: $color-slate-gray;
+.font-20 {
+  font-size: 20px;
 }
 
-// buttons
-// nav-btn
-.btn_def--nav {
-  font-family: $font-family;
-  font-weight: $light;
-  font-size: 14px;
-  line-height: 19px;
-  color: $color-white;
+.font-24 {
+  font-size: 24px;
 }
 
-// wave-buttons
-.btn_def--wave-white,
-.btn_def--wave-transparent {
-  font-family: $font-family;
-  font-size: 14px;
-  line-height: 19px;
-  font-weight: $regular;
+.font-32 {
+  font-size: 32px;
 }
 
-// header-btns
-.btn_def--colorful,
-.btn_def--transparent {
-  font-family: $font-family;
-  font-size: 16px;
-  line-height: 23px;
-  font-weight: $medium;
+.font-48 {
+  font-size: 48px;
 }
 
-// pricing-card-title
-.card__title {
-  font-family: $font-family;
-  font-weight: $medium;
+.font-64 {
   font-size: 64px;
-  line-height: 90px;
-  color: $color-woodersmoke;
 }
 
-// pricing__list-item / card__contact / card__price--month
-.pricing {
-  .card__list-item {
-    font-family: $font-family;
-    font-size: 14px;
-    line-height: 21px;
-    color: $color-black-pearl;
-  }
-  .card__contact {
-    font-family: $font-family;
-    font-weight: $regular;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 0.1px;
-    color: $color-slate-gray;
-  }
-  .card__price {
-    font-family: $font-family;
-    font-weight: $bold;
-    font-size: 20px;
-    line-height: 25px;
-    color: $color-black-pearl;
-  }
-  &__card__price--month {
-    font-family: $font-family;
-    font-weight: $regular;
-    font-size: 12px;
-    line-height: 25px;
-    color: $color-black-pearl;
-  }
+// font-weight
+
+.weight-thin {
+  font-weight: $thin;
 }
 
-// features
-// card-title
-.features__card-title {
-  font-family: $font-family;
+.weight-light {
+  font-weight: $light;
+}
+
+.weight-regular {
   font-weight: $regular;
-  font-size: 14px;
+}
+
+.weight-medium {
+  font-weight: $medium;
+}
+
+.weight-bold {
+  font-weight: $bold;
+}
+
+// line-height
+
+.line-19 {
+  line-height: 19px;
+}
+
+.line-21 {
   line-height: 21px;
 }
 
-// wave__text
-.wave__text {
-  font-family: $font-family;
-  font-weight: $thin;
-  font-size: 32px;
-  line-height: 40px;
-  letter-spacing: 0.3px;
-  color: $color-white;
+.line-23 {
+  line-height: 23px;
 }
 
-// footer-title / footer-link / footer-text
-.footer {
-  &__title {
-    font-family: $font-family;
-    font-weight: $medium;
-    font-size: 14px;
-    line-height: 19px;
-    color: $color-shark;
-  }
-  &__link {
-    font-family: $font-family;
-    font-weight: $light;
-    font-size: 16px;
-    line-height: 23px;
-    letter-spacing: 0.2px;
-    color: $color-regent-gray;
-  }
-  &__text {
-    font-family: $font-family;
-    font-weight: $light;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 0.1px;
-    color: $color-regent-gray;
-  }
-  .text-bold {
-    font-family: $font-family;
-    font-weight: $regular;
-    font-size: 14px;
-    line-height: 19px;
-    color: $color-shark;
-  }
+.line-25 {
+  line-height: 25px;
 }
+
+.line-26 {
+  line-height: 26px;
+}
+
+.line-28 {
+  line-height: 28px;
+}
+
+.line-40 {
+  line-height: 40px;
+}
+
+.line-57 {
+  line-height: 57px;
+}
+
+.line-75 {
+  line-height: 75px;
+}
+
+.line-90 {
+  line-height: 90px;
+}
+
+// navbar-brand / navbar-brand--bold / navbar-link
+// .navbar {
+//   &__brand {
+//     font-family: $font-family;
+//     font-weight: $thin;
+//     font-size: 24px;
+//     line-height: 28px;
+//     letter-spacing: 0.2px;
+//     color: $color-regent-gray;
+//   }
+//   &__brand--bold {
+//     font-family: $font-family;
+//     font-weight: $bold;
+//     font-size: 24px;
+//     line-height: 28px;
+//     letter-spacing: 0.1px;
+//     color: $color-shark;
+//   }
+
+//   &__link {
+//     font-family: $font-family;
+//     font-weight: $regular;
+//     font-size: 14px;
+//     line-height: 19px;
+//     letter-spacing: 0.1px;
+//     color: $color-white;
+//   }
+// }
+
+// h1
+// h1.hero__text {
+//   font-family: $font-family;
+//   font-weight: $bold;
+//   font-size: 64px;
+//   line-height: 75px;
+// }
+
+// hero__sub-text
+// .hero {
+//   &__sub-text {
+//     font-family: $font-family;
+//     font-weight: $light;
+//     font-size: 20px;
+//     line-height: 28px;
+
+//   }
+// }
+
+// features__text / pricing__text
+// .heading-text {
+//   font-family: $font-family;
+//   font-weight: $light;
+//   font-size: 48px;
+//   line-height: 57px;
+//   color: $color-shark;
+// }
+
+// // features__text-bold / pricing__text-bold
+
+// .heading-text-bold {
+//   font-family: $font-family;
+//   font-weight: $medium;
+//   font-size: 48px;
+//   line-height: 57px;
+//   color: $color-shark;
+// }
+
+// // features__sub-text / pricing__sub-text
+// .sub-text {
+//   font-family: $font-family;
+//   font-weight: $light;
+//   font-size: 18px;
+//   color: $color-regent-gray;
+//   line-height: 26px;
+//   letter-spacing: 0.1px;
+// }
+
+// pricing-card-title
+// .card__title {
+//   font-family: $font-family;
+//   font-weight: $medium;
+//   font-size: 64px;
+//   line-height: 90px;
+//   color: $color-woodersmoke;
+// }
+
+// features__card-text / pricing__card-text
+// .small-text {
+//   font-family: $font-family;
+//   font-weight: $thin;
+//   font-size: 16px;
+//   line-height: 19px;
+// }
+
+// buttons
+// nav-btn
+// .btn_def--nav {
+//   font-family: $font-family;
+//   font-weight: $light;
+//   font-size: 14px;
+//   line-height: 19px;
+//
+// }
+
+// wave-buttons
+// .btn_def--wave-white,
+// .btn_def--wave-transparent {
+//   font-family: $font-family;
+//   font-size: 14px;
+//   line-height: 19px;
+//   font-weight: $regular;
+// }
+
+// hero-btns
+// .btn_def--colorful,
+// .btn_def--transparent {
+//   font-family: $font-family;
+//   font-size: 16px;
+//   line-height: 23px;
+//   font-weight: $medium;
+// }
+
+// pricing__list-item / card__contact / card__price--month
+// .pricing {
+// .card__list-item {
+//   font-family: $font-family;
+//   font-size: 14px;
+//   line-height: 21px;
+//   color: $color-black-pearl;
+// }
+// .card__contact {
+//   font-family: $font-family;
+//   font-weight: $regular;
+//   font-size: 14px;
+//   line-height: 19px;
+//   letter-spacing: 0.1px;
+//   color: $color-slate-gray;
+// }
+// .card__price {
+//   font-family: $font-family;
+//   font-weight: $bold;
+//   font-size: 20px;
+//   line-height: 25px;
+//   color: $color-black-pearl;
+// }
+// &__card__price--month {
+//   font-family: $font-family;
+//   font-weight: $regular;
+//   font-size: 12px;
+//   line-height: 25px;
+//   color: $color-black-pearl;
+// }
+// }
+
+// features
+// card-title
+// .features__card-title {
+//   font-family: $font-family;
+//   font-weight: $regular;
+//   font-size: 14px;
+//   line-height: 21px;
+// }
+
+// wave__text
+// .wave__text {
+//   font-family: $font-family;
+//   font-weight: $thin;
+//   font-size: 32px;
+//   line-height: 40px;
+// }
+
+// footer-title / footer-link / footer-text
+// .footer {
+//   &__title {
+//     font-family: $font-family;
+//     font-weight: $medium;
+//     font-size: 14px;
+//     line-height: 19px;
+//   }
+//   &__link {
+//     font-family: $font-family;
+//     font-weight: $light;
+//     font-size: 16px;
+//     line-height: 23px;
+//   }
+
+//   &__text {
+//     font-family: $font-family;
+//     font-weight: $light;
+//     font-size: 14px;
+//     line-height: 19px;
+//   }
+//   .text-bold {
+//     font-family: $font-family;
+//     font-weight: $regular;
+//     font-size: 14px;
+//     line-height: 19px;
+//   }
+// }

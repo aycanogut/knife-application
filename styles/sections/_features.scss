@@ -10,8 +10,15 @@
     margin-top: 333px;
   }
 
+  &__heading-text,
+  &__heading-text-bold {
+    color: $color-shark;
+  }
+
   &__sub-text {
     padding: 28px 0 32px 0;
+    letter-spacing: 0.1px;
+    color: $color-regent-gray;
   }
 
   &__body {
@@ -20,10 +27,12 @@
 
   &__card-title {
     margin-top: -10px;
+    color: $color-black-pearl;
   }
 
   &__card-text {
     padding: 7px 0 10px 0;
     letter-spacing: 0.1px;
+    color: $color-slate-gray;
   }
 }

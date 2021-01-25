@@ -8,8 +8,15 @@
     padding: 200px 200px 0 200px;
   }
 
+  &__heading-text,
+  &__heading-text-bold {
+    color: $color-shark;
+  }
+
   &__sub-text {
     padding: 28px 0 58px 0;
+    letter-spacing: 0.1px;
+    color: $color-regent-gray;
   }
 
   .card {

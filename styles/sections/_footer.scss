@@ -13,21 +13,30 @@
 
   &__title {
     padding-bottom: 10px;
+    color: $color-shark;
   }
 
   &__list {
     padding: 6px 0;
   }
 
+  &__link {
+    letter-spacing: 0.2px;
+    color: $color-regent-gray;
+  }
   &__link:hover {
     color: $color-black;
   }
 
   &__text {
     margin: 89px 135px 50px 121px;
+    letter-spacing: 0.1px;
+    color: $color-regent-gray;
+    padding-bottom: 181px;
   }
 
   .text-bold {
     margin-left: 0;
+    color: $color-shark;
   }
 }

@@ -13,10 +13,17 @@
   }
   &__title {
     padding: 0 0 0 60px;
+    color: $color-woodersmoke;
   }
   &__price {
-    padding: 22px 40px 0 97px;
+    padding: 22px 40px 0 96px;
+    color: $color-black-pearl;
   }
+
+  &__price--month {
+    color: $color-black-pearl;
+  }
+
   &__text {
     padding: 0 0 30px 60px;
     margin-top: 1px;
@@ -24,13 +31,14 @@
   }
 
   &__list {
-    padding: 0 70px 30px 63px;
+    padding: 0 70px 30px 62px;
     margin-bottom: 10px;
   }
   &__list-item {
     margin-top: -20px;
     white-space: nowrap;
     padding: 0 0 18px 37px;
+    color: $color-black-pearl;
   }
 
   &__col:nth-child(2) {
@@ -38,7 +46,6 @@
   }
 
   // pricing-card-bottom
-
   .pricing__card-btn {
     display: flex;
     padding: 3px 0px 60px 60px;
@@ -49,7 +56,9 @@
   }
 
   &__contact {
-    padding: 12px 0 0 30px;
+    padding: 12px 0 0 29px;
+    letter-spacing: 0.1px;
+    color: $color-slate-gray;
   }
 
   // card-hover
