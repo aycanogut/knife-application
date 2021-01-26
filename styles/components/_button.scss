@@ -48,7 +48,8 @@
   }
 
   &--transparent:hover {
-    color: $color-regent-gray;
+    color: $color-shark;
+    @include transitions($args);
   }
 
   &--card {
@@ -69,7 +70,7 @@
   }
 
   &--wave-white:hover {
-    color: $color-black;
+    color: $color-shark;
   }
 
   &--wave-transparent {
@@ -80,6 +81,6 @@
   }
 
   &--wave-transparent:hover {
-    color: $color-black;
+    color: $color-shark;
   }
 }
