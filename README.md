@@ -1,13 +1,13 @@
 ### About The Project
-This is my first project with front-end technologies. I learned concepts like usage of HTML and CSS, SASS structure, BEM methodology and pixel perfect design. Project is only available on desktop size but its still on development for small screens. 
+This is my second project with front-end technologies. I practiced HTML and CSS, SASS structure, BEM methodology, little bit of Bootstrap grid system, hover animations and pixel perfect design. Project is only available on desktop size but its still on development for small screens. 
 ### Built With
 ● [HTML](https://html.spec.whatwg.org/)
 ● [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 ● [SASS](https://sass-lang.com/)
 ● [Bootstrap](https://getbootstrap.com/)
-#### [Deploy with Vercel](https://seo-landing-page.vercel.app/#)
-##### [Original Design on Figma Community](https://www.figma.com/file/cCBnFoILY3vqGGbw74CNfT/SEO-Landing-Page?node-id=0%3A1&viewport=1035%2C120%2C0.24916347861289978)
+#### [Deploy with Vercel](https://knife-application.vercel.app/)
+##### [Original Design on Figma Community](https://www.figma.com/file/9hHMgCNj6mKCQ7K4CmNpXj/Knife-Application---Mobile-App-Landing-Page-Template-by-PanoplyStore)
 <br>
 
-![alt seo-landing-page](https://s3.gifyu.com/images/project.gif)
+![alt knife-application](https://s3.gifyu.com/images/desktop36b0feac928d8ff7.gif)
 
