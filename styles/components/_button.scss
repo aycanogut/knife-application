@@ -12,6 +12,7 @@
     color: white;
     @include drop-shadow($nav-btn);
   }
+
   &--nav:hover {
     transform: scale(1.04);
     @include transitions($args);
@@ -23,6 +24,7 @@
     color: $color-white;
     @include gradient-bg;
   }
+
   &--colorful:hover {
     color: white;
     @include hover-shadow;
@@ -58,6 +60,7 @@
     @include card-btn-gradient;
     @include drop-shadow($card-btn);
   }
+
   &--card:hover {
     color: white;
   }
