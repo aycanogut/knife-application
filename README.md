@@ -9,5 +9,5 @@ It's a landing page creation platform with single page. I practiced HTML and CSS
 ##### [Original Design on Figma Community](https://www.figma.com/file/9hHMgCNj6mKCQ7K4CmNpXj/Knife-Application---Mobile-App-Landing-Page-Template-by-PanoplyStore)
 <br>
 
-![alt knife-application](https://s3.gifyu.com/images/desktop36b0feac928d8ff7.gif)
+<img src="https://s3.gifyu.com/images/desktop36b0feac928d8ff7.gif">
 
