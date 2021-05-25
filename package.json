@@ -1,0 +1,22 @@
+{
+  "name": "oval-finder",
+  "version": "1.0.0",
+  "description": "A clone website project building with HTML, CSS and Bootstrap. It's still on process.  Original design is located on assets/prototype directory.",
+  "scripts": {
+    "compile:sass": "live-server & node-sass styles/index.scss styles/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aycanogut/oval-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aycanogut/oval-finder/issues"
+  },
+  "homepage": "https://github.com/aycanogut/oval-finder#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
