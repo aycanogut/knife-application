@@ -594,6 +594,10 @@ a {
   .btn_def--wave-transparent:hover {
     color: #24282a; }
 
+@media (min-width: 320px) {
+  .btn_def {
+    display: none; } }
+
 .navbar {
   padding: 0; }
   .navbar__brand {
@@ -604,7 +608,10 @@ a {
     letter-spacing: 0.1px;
     color: #24282a; }
   .navbar__menu {
-    padding: 60px 134px 0 0; }
+    display: flex;
+    flex-direction: row;
+    padding: 60px 134px 0 0;
+    z-index: 10; }
   .navbar__list {
     margin-left: 1px; }
   .navbar__link {
