@@ -627,7 +627,7 @@ a {
 
 @media (min-width: 320px) and (max-width: 575px) {
   .navbar__brand {
-    padding: 0; }
+    padding: 20px 16px; }
   .navbar__menu {
     position: absolute;
     top: 40px;
@@ -644,8 +644,7 @@ a {
   .navbar .burger-toggler {
     display: block;
     cursor: pointer;
-    margin-right: 6px;
-    margin-left: auto;
+    margin: 0 14px 0 auto;
     z-index: 10; }
     .navbar .burger-toggler div {
       width: 24px;
