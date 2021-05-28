@@ -17,7 +17,7 @@
   &__menu {
     display: flex;
     flex-direction: row;
-    padding: 60px 134px 0 0;
+    padding: 75px 144px 0 0;
     z-index: 10;
   }
 
@@ -26,7 +26,7 @@
   }
 
   &__link {
-    padding: 0 18px 0 18px;
+    padding: 0 20px;
     color: $color-white;
   }
 
@@ -44,72 +44,73 @@
 }
 
 // Extra small devices (portrait phones, less than 576px)
-// @media (min-width: 320px) {
-//   .navbar {
-//     &__brand {
-//       padding: 0;
-//     }
 
-//     &__menu {
-//       position: absolute;
-//       top: 40px;
-//       display: none;
-//       flex-direction: column;
-//       z-index: 10;
-//       width: 100%;
-//       margin: auto;
-//       padding: 0;
-//       background-color: $color-white;
-//       box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
-//     }
+@media (min-width: 320px) and (max-width: 575px) {
+  .navbar {
+    &__brand {
+      padding: 0;
+    }
 
-//     &__list {
-//     }
+    &__menu {
+      position: absolute;
+      top: 40px;
+      display: none;
+      flex-direction: column;
+      z-index: 10;
+      width: 100%;
+      margin: auto;
+      padding: 0;
+      background-color: $color-white;
+      box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+    }
 
-//     &__link {
-//       color: black;
-//     }
+    &__list {
+    }
 
-//     .burger-toggler {
-//       display: block;
-//       cursor: pointer;
-//       margin-right: 6px;
-//       margin-left: auto;
-//       z-index: 10;
+    &__link {
+      color: black;
+    }
 
-//       div {
-//         width: 24px;
-//         height: 3px;
-//         margin: 5px;
-//         background-color: #000;
-//       }
-//     }
-//   }
-// }
+    .burger-toggler {
+      display: block;
+      cursor: pointer;
+      margin-right: 6px;
+      margin-left: auto;
+      z-index: 10;
 
-// // Small devices (landscape phones, 576px and up)
-// @media (min-width: 576px) {
-//   .navbar {
-//   }
-// }
+      div {
+        width: 24px;
+        height: 3px;
+        margin: 5px;
+        background-color: #000;
+      }
+    }
+  }
+}
 
-// // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) {
-//   .navbar {
-//   }
-// }
-// // Large devices (desktops, 992px and up)
-// @media (min-width: 992px) {
-//   .navbar {
-//   }
-// }
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .navbar {
+  }
+}
 
-// // Extra large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) {
-//   .navbar {
-//   }
-// }
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .navbar {
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .navbar {
+  }
+}
 
-// .navbar-toggle-show {
-//   display: flex;
-// }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .navbar {
+  }
+}
+
+.navbar-toggle-show {
+  display: flex;
+}
