@@ -11,10 +11,12 @@
     display: flex;
     padding-top: 67px;
   }
+
   &__title {
     padding: 0 0 0 60px;
     color: $color-woodersmoke;
   }
+
   &__price {
     padding: 22px 40px 0 96px;
     color: $color-black-pearl;
@@ -34,6 +36,7 @@
     padding: 0 70px 30px 62px;
     margin-bottom: 10px;
   }
+
   &__list-item {
     margin-top: -20px;
     white-space: nowrap;

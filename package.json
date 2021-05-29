@@ -18,5 +18,8 @@
   "homepage": "https://github.com/aycanogut/oval-finder#readme",
   "devDependencies": {
     "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
   }
 }
