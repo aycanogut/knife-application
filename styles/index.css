@@ -596,8 +596,10 @@ a {
     color: #24282a; }
 
 @media (min-width: 320px) and (max-width: 575px) {
-  .btn_def {
-    display: none; } }
+  .btn_def--nav {
+    padding: 14px 50px;
+    font-size: 20px;
+    margin: 0; } }
 
 .navbar {
   padding: 0; }
@@ -632,40 +634,46 @@ a {
       padding: 20px 16px; }
     .navbar__menu {
       position: absolute;
-      top: 24px;
-      left: 20px;
+      top: 0;
+      left: 0;
       display: none;
       flex-direction: column;
       z-index: 10;
-      width: 80%;
+      width: 100%;
       height: 500px;
       margin: auto;
       padding: 0;
       background-color: #fff;
-      box-shadow: 1px 1px 15px 1px black;
-      animation: myAnim 0.4s ease-out 0s 1 normal forwards; }
+      box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1);
+      animation: myAnim 0.4s ease-out 0s 1 normal forwards;
+      transition: animation 0.4s ease; }
   @keyframes myAnim {
     0% {
       opacity: 0;
       transform: translateX(-250px); }
     100% {
       opacity: 1;
-      transform: translateX(0); }
-    0% {
-      opacity: 0;
-      transform: translateX(-250px); } }
+      transform: translateX(0); } }
+    .navbar__list {
+      padding: 30px 12px;
+      margin: auto 0;
+      text-align: center;
+      text-transform: uppercase; }
     .navbar__link {
-      color: black; }
+      color: black;
+      font-size: 28px; }
     .navbar .burger-toggler {
       display: block;
       cursor: pointer;
       margin: 0 14px 0 auto;
-      z-index: 11; }
+      z-index: 9; }
       .navbar .burger-toggler div {
         width: 24px;
         height: 3px;
         margin: 5px;
-        background-color: #000; } }
+        background-color: #000; }
+    .navbar .nav-close {
+      margin: 20px 20px 0 auto; } }
 
 .navbar-toggle-show {
   display: flex; }

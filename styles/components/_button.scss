@@ -92,7 +92,11 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (min-width: 320px) and (max-width: 575px) {
   .btn_def {
-    display: none;
+    &--nav {
+      padding: 14px 50px;
+      font-size: 20px;
+      margin: 0;
+    }
   }
 }
 
