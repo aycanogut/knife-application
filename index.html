@@ -22,15 +22,12 @@
     <header class="navbar__brand font-24 weight-thin line-28"><span
         class="navbar__brand--bold font-24 weight-bold line-28">Knifé</span> Application
     </header>
-    <div class="burger-toggler">
+    <div class="burger-toggler" onclick="showNav()">
       <div class="link-1"></div>
       <div class="link-2"></div>
       <div class="link-3"></div>
     </div>
     <ul class="navbar__menu list-unstyled e">
-      <span class="nav-close">
-        <img src="./img/nav-back.svg" alt="">
-      </span>
       <li class="navbar__list ">
         <a href="#" class="navbar__link font-14 weight-regular line-19">Features</a>
       </li>
@@ -320,10 +317,9 @@
     integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
   </script>
   <script type="text/javascript">
-    $('.burger-toggler').click(function () {
-      $('.navbar__menu').toggleClass("navbar-toggle-show");
-      return false;
-    });
+    const showNav = () => {
+      document.querySelector('.navbar__menu').classList.toggle('active');
+    }
   </script>
 </body>
 
