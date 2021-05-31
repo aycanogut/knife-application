@@ -599,7 +599,10 @@ a {
   .btn_def--nav {
     padding: 14px 50px;
     font-size: 20px;
-    margin: 0 0 30px 0; } }
+    margin: 0 0 30px 0; }
+  .btn_def--colorful, .btn_def--transparent {
+    text-align: center;
+    margin: 30px 0; } }
 
 .navbar {
   padding: 0; }
@@ -705,12 +708,18 @@ a {
     margin: 10px; }
   .hero__sub-text {
     color: #000;
-    padding: 30px 10px;
+    padding: 40px 10px;
     font-weight: 500; }
   .hero__screen {
     display: none; }
   .hero__left {
-    padding: 0; } }
+    padding: 0; }
+  .hero__buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0; }
+  .hero__btn:nth-child(2) {
+    margin: 0; } }
 
 @media (min-width: 576px) and (max-width: 767px) {
   .hero__text {
