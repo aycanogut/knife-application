@@ -721,7 +721,8 @@ a {
   .hero__buttons {
     display: flex;
     flex-direction: column;
-    margin: 20px 0; }
+    margin: 20px auto;
+    width: 80%; }
   .hero__btn:nth-child(2) {
     margin: 0; } }
 
