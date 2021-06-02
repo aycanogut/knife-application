@@ -4,6 +4,7 @@
   display: inline-block;
   border: none;
   border-radius: 30px;
+  @include transition($args);
 
   &--nav {
     padding: 17px 30px 14px 29px;

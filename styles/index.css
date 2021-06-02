@@ -521,7 +521,11 @@ a {
 .btn_def {
   display: inline-block;
   border: none;
-  border-radius: 30px; }
+  border-radius: 30px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; }
   .btn_def--nav {
     padding: 17px 30px 14px 29px;
     margin-top: -15px;
