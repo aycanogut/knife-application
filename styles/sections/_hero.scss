@@ -115,6 +115,15 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px) {
+  .hero {
+    &__left {
+      padding: 0 0 0 50px;
+    }
+
+    &__screen {
+      display: none;
+    }
+  }
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
