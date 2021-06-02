@@ -63,7 +63,7 @@
     &__buttons {
       display: flex;
       flex-direction: column;
-      margin: 20px auto;
+      margin: 40px auto;
       width: 80%;
     }
     &__btn:nth-child(2) {
@@ -75,18 +75,46 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
   .hero {
+    text-align: center;
+    // h1 and sub-text
     &__text {
+      font-size: 50px;
+      color: $color-white;
+      margin: 30px 10px;
       padding: 0;
     }
 
+    &__sub-text {
+      font-weight: 500;
+      color: $color-black;
+      margin: 20px 0;
+      padding: 30px 10px;
+    }
+
+    // phone screens
+
     &__screen {
       display: none;
+    }
+
+    &__left {
+      padding: 0;
+    }
+
+    // buttons
+    &__buttons {
+      display: block;
+      flex-direction: column;
+      margin: 30px 10px;
+    }
+    &__btn:nth-child(2) {
+      margin: 0 0 0 20px;
     }
   }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
