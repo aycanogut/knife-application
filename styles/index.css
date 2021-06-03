@@ -761,6 +761,8 @@ a {
       padding: 20px 0 0 0; }
     .hero__text {
       color: #fff; }
+    .hero__sub-text {
+      color: #000; }
     .hero__screen {
       display: none; } }
 
