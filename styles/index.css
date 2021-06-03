@@ -805,28 +805,43 @@ a {
 
 /* Extra small screens*/
 @media (min-width: 320px) and (max-width: 575px) {
-  .features__heading, .features__sub-text, .features__body {
-    padding: 0;
-    margin: 0; } }
+  .features {
+    margin: 100px 12px; }
+    .features__heading, .features__sub-text, .features__body {
+      padding: 40px 0;
+      margin: 0; }
+    .features__sub-text {
+      margin: 50px 0 0 0; }
+    .features__card {
+      margin: 0 0 100px 0; }
+      .features__card__title {
+        padding: 40px 0; } }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
-  .features__heading, .features__sub-text, .features__body {
-    padding: 0;
-    margin: 0; } }
+  .features {
+    margin: 250px 20px; }
+    .features__heading, .features__sub-text, .features__body {
+      padding: 20px 0;
+      margin: 0; }
+    .features__sub-text {
+      margin: 30px 0; }
+    .features__card {
+      margin: 0 0 100px 0; } }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) and (max-width: 991px) {
-  .features__heading, .features__sub-text, .features__body {
-    padding: 0;
-    margin: 0; } }
+  .features {
+    margin: 150px 20px; }
+    .features__heading, .features__sub-text, .features__body {
+      padding: 0;
+      margin: 0; }
+    .features__sub-text {
+      margin: 60px 0; }
+    .features__card {
+      margin: 20px 0 50px 0; } }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .features__heading, .features__sub-text, .features__body {
-    padding: 0;
-    margin: 0; } }
-
 /* Extra large devices (large desktops, 1200px and up) */
 .pricing {
   font-family: "Roboto", sans-serif; }

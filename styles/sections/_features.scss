@@ -40,11 +40,24 @@
 /* Extra small screens*/
 @media (min-width: 320px) and (max-width: 575px) {
   .features {
+    margin: 100px 12px;
     &__heading,
     &__sub-text,
     &__body {
-      padding: 0;
+      padding: 40px 0;
       margin: 0;
+    }
+
+    &__sub-text {
+      margin: 50px 0 0 0;
+    }
+
+    &__card {
+      margin: 0 0 100px 0;
+
+      &__title {
+        padding: 40px 0;
+      }
     }
   }
 }
@@ -52,11 +65,20 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
   .features {
+    margin: 250px 20px;
     &__heading,
     &__sub-text,
     &__body {
-      padding: 0;
+      padding: 20px 0;
       margin: 0;
+    }
+
+    &__sub-text {
+      margin: 30px 0;
+    }
+
+    &__card {
+      margin: 0 0 100px 0;
     }
   }
 }
@@ -64,25 +86,27 @@
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) and (max-width: 991px) {
   .features {
+    margin: 150px 20px;
+
     &__heading,
     &__sub-text,
     &__body {
       padding: 0;
       margin: 0;
+    }
+
+    &__sub-text {
+      margin: 60px 0;
+    }
+
+    &__card {
+      margin: 20px 0 50px 0;
     }
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .features {
-    &__heading,
-    &__sub-text,
-    &__body {
-      padding: 0;
-      margin: 0;
-    }
-  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
