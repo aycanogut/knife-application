@@ -116,8 +116,13 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px) {
   .hero {
+    text-align: center;
     &__left {
-      padding: 0 0 0 50px;
+      padding: 20px 0 0 0;
+    }
+
+    &__text {
+      color: $color-white;
     }
 
     &__screen {

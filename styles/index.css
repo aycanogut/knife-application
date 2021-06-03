@@ -755,10 +755,14 @@ a {
       margin: 0 0 0 20px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .hero__left {
-    padding: 0 0 0 50px; }
-  .hero__screen {
-    display: none; } }
+  .hero {
+    text-align: center; }
+    .hero__left {
+      padding: 20px 0 0 0; }
+    .hero__text {
+      color: #fff; }
+    .hero__screen {
+      display: none; } }
 
 .features {
   font-family: "Roboto", sans-serif;
