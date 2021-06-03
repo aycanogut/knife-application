@@ -803,6 +803,31 @@ a {
     letter-spacing: 0.1px;
     color: #798893; }
 
+/* Extra small screens*/
+@media (min-width: 320px) and (max-width: 575px) {
+  .features__heading, .features__sub-text, .features__body {
+    padding: 0;
+    margin: 0; } }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .features__heading, .features__sub-text, .features__body {
+    padding: 0;
+    margin: 0; } }
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width: 991px) {
+  .features__heading, .features__sub-text, .features__body {
+    padding: 0;
+    margin: 0; } }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .features__heading, .features__sub-text, .features__body {
+    padding: 0;
+    margin: 0; } }
+
+/* Extra large devices (large desktops, 1200px and up) */
 .pricing {
   font-family: "Roboto", sans-serif; }
   .pricing__heading {
