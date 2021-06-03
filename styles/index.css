@@ -608,9 +608,15 @@ a {
     text-align: center;
     margin: 30px 0; } }
 
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .btn_def--colorful {
     box-shadow: 1px 1px white; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .btn_def--colorful {
+    box-shadow: 1px 1px white; }
+  .btn_def--colorful, .btn_def--transparent {
+    margin: 0 50px; } }
 
 .navbar {
   padding: 0; }
@@ -764,7 +770,13 @@ a {
     .hero__sub-text {
       color: #000; }
     .hero__screen {
-      display: none; } }
+      display: none; }
+    .hero__buttons {
+      display: block;
+      flex-direction: column;
+      margin: 30px 10px; }
+    .hero__btn:nth-child(2) {
+      margin: 0; } }
 
 .features {
   font-family: "Roboto", sans-serif;
