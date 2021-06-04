@@ -524,21 +524,21 @@ a {
     .card__text {
       padding: 0 20px; }
     .card__body {
-      padding: 20px; }
+      padding: 20px 20px 0 20px; }
     .card__title {
       font-size: 32px; }
     .card__price {
       font-size: 12px;
-      margin: auto; }
+      margin: auto 6px auto auto; }
     .card__text {
       text-align: justify; }
-    .card__contact {
-      padding: 30px 0; }
     .card__list div {
       display: flex;
       padding: 8px 0; }
       .card__list div li.icon {
-        margin-right: 12px; } }
+        margin-right: 12px; }
+    .card__contact {
+      padding: 0 0 20px 0; } }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 577px) and (max-width: 768px) {
@@ -654,7 +654,7 @@ a {
   .btn_def--card {
     white-space: nowrap;
     padding: 14px 60px;
-    margin: 20px auto; } }
+    margin: 30px auto; } }
 
 @media (min-width: 577px) and (max-width: 768px) {
   .btn_def--colorful {

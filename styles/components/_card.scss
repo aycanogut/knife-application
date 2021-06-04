@@ -81,11 +81,11 @@
     }
 
     // icon hover color switch
-
     .icon {
       &--yes {
         background: url("../img/icon-yes-white.svg");
       }
+
       &--no {
         background: url("../img/icon-no-white.svg");
       }
@@ -157,7 +157,7 @@
     }
 
     &__body {
-      padding: 20px;
+      padding: 20px 20px 0 20px;
     }
 
     &__title {
@@ -166,15 +166,11 @@
 
     &__price {
       font-size: 12px;
-      margin: auto;
+      margin: auto 6px auto auto;
     }
 
     &__text {
       text-align: justify;
-    }
-
-    &__contact {
-      padding: 30px 0;
     }
 
     // placed the both li elements(icons and list items) inside div to align side by side.
@@ -185,6 +181,10 @@
       li.icon {
         margin-right: 12px;
       }
+    }
+
+    &__contact {
+      padding: 0 0 20px 0;
     }
   }
 }
