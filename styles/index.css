@@ -516,7 +516,29 @@ a {
     height: auto; }
     .card__heading, .card__title, .card__price, .card__text, .card__list, .card__list-item {
       margin: 0;
-      padding: 0; } }
+      padding: 0; }
+    .card__col:nth-child(2) {
+      margin: 0; }
+    .card__heading {
+      padding: 0 10px 0 20px; }
+    .card__text {
+      padding: 0 20px; }
+    .card__body {
+      padding: 20px; }
+    .card__title {
+      font-size: 32px; }
+    .card__price {
+      font-size: 12px;
+      margin: auto; }
+    .card__text {
+      text-align: justify; }
+    .card__contact {
+      padding: 30px 0; }
+    .card__list div {
+      display: flex;
+      padding: 8px 0; }
+      .card__list div li.icon {
+        margin-right: 12px; } }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 577px) and (max-width: 768px) {
@@ -621,20 +643,24 @@ a {
   .btn_def--wave-transparent:hover {
     color: #24282a; }
 
-@media (min-width: 320px) and (max-width: 575px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .btn_def--nav {
     padding: 14px 50px;
     font-size: 20px;
     margin: 0 0 30px 0; }
   .btn_def--colorful, .btn_def--transparent {
     text-align: center;
-    margin: 30px 0; } }
+    margin: 30px 0; }
+  .btn_def--card {
+    white-space: nowrap;
+    padding: 14px 60px;
+    margin: 20px auto; } }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 577px) and (max-width: 768px) {
   .btn_def--colorful {
     box-shadow: 1px 1px white; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .btn_def--colorful {
     box-shadow: 1px 1px white; }
   .btn_def--colorful, .btn_def--transparent {
@@ -832,11 +858,11 @@ a {
       padding: 40px 0;
       margin: 0; }
     .features__sub-text {
-      margin: 50px 0 0 0; }
+      margin: 10px 0 0 0; }
     .features__card {
       margin: 0 0 100px 0; }
-      .features__card__title {
-        padding: 40px 0; } }
+      .features__card-title {
+        padding: 10px 0; } }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 577px) and (max-width: 768px) {
@@ -881,10 +907,21 @@ a {
     margin: 0 105px; }
 
 @media (min-width: 320px) and (max-width: 576px) {
-  .pricing__heading, .pricing__sub-text, .pricing__row,
-  .pricing .card {
-    padding: 0;
-    margin: 0; } }
+  .pricing {
+    padding-top: 30px; }
+    .pricing__heading, .pricing__sub-text, .pricing__row {
+      padding: 0;
+      margin: 0; }
+    .pricing__sub-text {
+      padding: 50px 0; }
+    .pricing .card {
+      margin: 50px 0; }
+    .pricing .pricing__card-btn {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      text-align: center; } }
 
 /* Small devices (landscape phones, 576px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */

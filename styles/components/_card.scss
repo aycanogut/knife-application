@@ -141,6 +141,51 @@
       margin: 0;
       padding: 0;
     }
+
+    // match both columns alignment
+    &__col:nth-child(2) {
+      margin: 0;
+    }
+
+    // font-styles and alingment of card inner elements
+    &__heading {
+      padding: 0 10px 0 20px;
+    }
+
+    &__text {
+      padding: 0 20px;
+    }
+
+    &__body {
+      padding: 20px;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__price {
+      font-size: 12px;
+      margin: auto;
+    }
+
+    &__text {
+      text-align: justify;
+    }
+
+    &__contact {
+      padding: 30px 0;
+    }
+
+    // placed the both li elements(icons and list items) inside div to align side by side.
+    &__list div {
+      display: flex;
+      padding: 8px 0;
+
+      li.icon {
+        margin-right: 12px;
+      }
+    }
   }
 }
 
