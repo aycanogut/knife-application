@@ -124,3 +124,46 @@
 .card__list {
   display: block;
 }
+
+// Extra small devices (portrait phones, less than 576px)
+@include media(">=xs", "<=sm") {
+  .card {
+    width: auto;
+    height: auto;
+
+    // reset spacing
+    &__heading,
+    &__title,
+    &__price,
+    &__text,
+    &__list,
+    &__list-item {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@include media(">sm", "<=md") {
+  .card {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@include media(">md", "<=lg") {
+  .card {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@include media(">lg", "<=xl") {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@include media(">=xl") {
+}

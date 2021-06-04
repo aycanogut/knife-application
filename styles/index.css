@@ -510,6 +510,28 @@ a {
 .card__list {
   display: block; }
 
+@media (min-width: 320px) and (max-width: 576px) {
+  .card {
+    width: auto;
+    height: auto; }
+    .card__heading, .card__title, .card__price, .card__text, .card__list, .card__list-item {
+      margin: 0;
+      padding: 0; } }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .card {
+    width: auto;
+    height: auto; } }
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 769px) and (max-width: 992px) {
+  .card {
+    width: auto;
+    height: auto; } }
+
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
 .icon {
   width: 20px;
   height: 20px; }
