@@ -27,3 +27,32 @@
     margin: 0 105px;
   }
 }
+
+// Extra small devices (portrait phones, less than 576px)
+@include media(">=xs", "<=sm") {
+  .pricing {
+    &__heading,
+    &__sub-text,
+    &__row,
+    .card {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@include media(">sm", "<=md") {
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@include media(">md", "<=lg") {
+}
+
+/* Large devices (desktops, 992px and up) */
+@include media(">lg", "<=xl") {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@include media(">=xl") {
+}

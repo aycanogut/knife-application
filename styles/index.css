@@ -858,6 +858,16 @@ a {
   .pricing__row {
     margin: 0 105px; }
 
+@media (min-width: 320px) and (max-width: 576px) {
+  .pricing__heading, .pricing__sub-text, .pricing__row,
+  .pricing .card {
+    padding: 0;
+    margin: 0; } }
+
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
 .wave {
   height: 678px;
   font-family: "Roboto", sans-serif;
