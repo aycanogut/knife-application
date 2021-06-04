@@ -681,7 +681,7 @@ a {
         margin: 5px;
         background-color: #000; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
   .navbar__brand {
     padding: 20px 0 0 30px; }
   .navbar__menu {
@@ -714,7 +714,7 @@ a {
   top: -45px;
   right: 0px; }
 
-@media (min-width: 320px) and (max-width: 575px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .hero__text {
     font-size: 50px;
     color: #fff;
@@ -736,7 +736,7 @@ a {
   .hero__btn:nth-child(2) {
     margin: 0; } }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .hero {
     text-align: center; }
     .hero__text {
@@ -760,7 +760,7 @@ a {
     .hero__btn:nth-child(2) {
       margin: 0 0 0 20px; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .hero {
     text-align: center; }
     .hero__left {
@@ -803,8 +803,7 @@ a {
     letter-spacing: 0.1px;
     color: #798893; }
 
-/* Extra small screens*/
-@media (min-width: 320px) and (max-width: 575px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .features {
     margin: 100px 12px; }
     .features__heading, .features__sub-text, .features__body {
@@ -818,7 +817,7 @@ a {
         padding: 40px 0; } }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 577px) and (max-width: 768px) {
   .features {
     margin: 250px 20px; }
     .features__heading, .features__sub-text, .features__body {
@@ -830,7 +829,7 @@ a {
       margin: 0 0 100px 0; } }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .features {
     margin: 150px 20px; }
     .features__heading, .features__sub-text, .features__body {
