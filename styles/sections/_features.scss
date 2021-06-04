@@ -65,7 +65,7 @@
 // Extra small devices (portrait phones, less than 576px)
 @include media(">=xs", "<=sm") {
   .features {
-    margin: 100px 12px;
+    margin: 100px 12px 0 12px;
     &__heading,
     &__sub-text,
     &__body {

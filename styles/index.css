@@ -805,7 +805,7 @@ a {
 
 @media (min-width: 320px) and (max-width: 576px) {
   .features {
-    margin: 100px 12px; }
+    margin: 100px 12px 0 12px; }
     .features__heading, .features__sub-text, .features__body {
       padding: 40px 0;
       margin: 0; }
