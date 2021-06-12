@@ -1,9 +1,9 @@
 // cards
 
 .card {
+  @include box-shadow(rgba(0, 0, 0, 0.11) 0px 10px 50px);
   width: 570px;
   height: 514px;
-  @include card-shadow;
   border: none;
   border-radius: 10px;
 
@@ -94,8 +94,8 @@
     .pricing__card__bottom {
       .pricing__card-btn {
         .btn_def {
-          color: $color-tickle-me-pink;
           @include white-bg;
+          color: $color-tickle-me-pink;
         }
       }
     }
@@ -114,11 +114,10 @@
 
 .card:hover::before {
   @include gradient-bg;
-  @include card-shadow--hover;
-  @include transition($card-bg-transition);
-
+  @include box-shadow(rgba(0, 0, 0, 0.3) 0px 25px 50px -12px);
+  @include transition(all 0.2s);
+  @include transition(all 0.3s ease-in);
   transform: scaleY(1.1);
-  @include transitions($args);
 }
 
 .card__list {

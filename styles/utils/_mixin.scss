@@ -1,10 +1,8 @@
 // mixin
 
-// transitions
+// transition
 
-$args: all 0.3s ease-in;
-
-@mixin transitions($args) {
+@mixin transition($args) {
   -webkit-transition: $args;
   -moz-transition: $args;
   -o-transition: $args;
@@ -18,62 +16,11 @@ $args: all 0.3s ease-in;
   box-shadow: $args;
 }
 
-// card-bg-transition
-$card-bg-transition: all 0.2s;
-
-@mixin transition($card-bg-transition) {
-  -webkit-transition: $card-bg-transition;
-  -moz-transition: $card-bg-transition;
-  -o-transition: $card-bg-transition;
-  transition: $card-bg-transition;
-}
-
-// * box-shadows
-
-// header-btn-colorful
-
-$btn-colorful: 0 15px 35px rgba(0, 0, 0, 0.3);
-
-@mixin hover-shadow {
-  -webkit-box-shadow: $btn-colorful;
-  -moz-box-shadow: $btn-colorful;
-  box-shadow: $btn-colorful;
-}
-
-// pricing__card--shadow
-$card-shadow: rgba(0, 0, 0, 0.11) 0px 10px 50px;
-@mixin card-shadow {
-  -webkit-box-shadow: $card-shadow;
-  -moz-box-shadow: $card-shadow;
-  box-shadow: $card-shadow;
-}
-
-//pricing__card--shadow:hover
-$card-shadow-hover: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
-@mixin card-shadow--hover {
-  -webkit-box-shadow: $card-shadow-hover;
-  -moz-box-shadow: $card-shadow-hover;
-  box-shadow: $card-shadow-hover;
-}
-
 // * drop-shadows
 
-// nav-btn-shadow
-
-$nav-btn: drop-shadow(0px 20px 25px rgba(000, 000, 000, 0.4));
-
-@mixin drop-shadow($nav-btn) {
-  -webkit-filter: $nav-btn;
-  filter: $nav-btn;
-}
-
-// card-btn-shadow
-
-$card-btn: drop-shadow(0px 10px 10px rgba(000, 000, 000, 0.22));
-
-@mixin drop-shadow($card-btn) {
-  -webkit-filter: $card-btn;
-  filter: $card-btn;
+@mixin drop-shadow($args) {
+  -webkit-filter: $args;
+  filter: $args;
 }
 
 // * gradient-background
