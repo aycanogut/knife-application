@@ -25,6 +25,20 @@
     padding: 0 120px 0 120px;
   }
 
+  &__card {
+    @include transition(all 0.4s ease-in-out);
+    position: relative;
+    padding: 20px;
+
+    &:hover {
+      @include box-shadow(0 20px 40px rgba(61, 65, 84, 0.15));
+      @include transition(all 0.2s ease-in-out);
+
+      border-radius: 20px;
+      top: -5px;
+    }
+  }
+
   &__card-title {
     margin-top: -10px;
     color: $color-black-pearl;

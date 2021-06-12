@@ -841,6 +841,23 @@ a {
     color: #939fa4; }
   .features__body {
     padding: 0 120px 0 120px; }
+  .features__card {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    padding: 20px; }
+    .features__card:hover {
+      -webkit-box-shadow: 0 20px 40px rgba(61, 65, 84, 0.15);
+      -moz-box-shadow: 0 20px 40px rgba(61, 65, 84, 0.15);
+      box-shadow: 0 20px 40px rgba(61, 65, 84, 0.15);
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      border-radius: 20px;
+      top: -5px; }
   .features__card-title {
     margin-top: -10px;
     color: #091d2d; }

@@ -1,6 +1,6 @@
 // mixin
 
-// * transitions
+// transitions
 
 $args: all 0.3s ease-in;
 
@@ -9,6 +9,13 @@ $args: all 0.3s ease-in;
   -moz-transition: $args;
   -o-transition: $args;
   transition: $args;
+}
+
+// box shadow
+@mixin box-shadow($args) {
+  -webkit-box-shadow: $args;
+  -moz-box-shadow: $args;
+  box-shadow: $args;
 }
 
 // card-bg-transition
