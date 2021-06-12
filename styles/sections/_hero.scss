@@ -88,7 +88,7 @@
       font-weight: 500;
       color: $color-black;
       margin: 20px 0;
-      padding: 30px 10px;
+      padding: 50px 10px;
     }
 
     // phone screens
@@ -103,7 +103,6 @@
     // buttons
     &__buttons {
       display: block;
-      flex-direction: column;
       margin: 30px 10px;
     }
 
@@ -118,7 +117,7 @@
   .hero {
     text-align: center;
     &__left {
-      padding: 50px 0 0 0;
+      padding: 60px 0 0 0;
     }
 
     // h1 and sub-text
@@ -129,7 +128,7 @@
 
     &__sub-text {
       color: $color-black;
-      padding: 50px 0;
+      padding: 80px 0 100px 0;
     }
 
     // phone screens
@@ -140,12 +139,11 @@
     // buttons
     &__buttons {
       display: block;
-      flex-direction: column;
       margin: 30px 10px;
     }
 
-    &__btn:nth-child(2) {
-      margin: 0;
+    &__btn:is(.btn_def) {
+      margin: 0 20px;
     }
   }
 }

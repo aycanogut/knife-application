@@ -37,31 +37,6 @@
   }
 }
 
-// /* Extra small screens*/
-// @media (min-width: 320px) and (max-width: 575px) {
-//   .features {
-//     margin: 100px 12px;
-//     &__heading,
-//     &__sub-text,
-//     &__body {
-//       padding: 40px 0;
-//       margin: 0;
-//     }
-
-//     &__sub-text {
-//       margin: 50px 0 0 0;
-//     }
-
-//     &__card {
-//       margin: 0 0 100px 0;
-
-//       &__title {
-//         padding: 40px 0;
-//       }
-//     }
-//   }
-// }
-
 // Extra small devices (portrait phones, less than 576px)
 @include media(">=xs", "<=sm") {
   .features {
