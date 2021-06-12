@@ -72,6 +72,7 @@
     padding: 18px 49px 13px 50px;
     background-color: $color-white;
     color: $color-tickle-me-pink;
+    margin: 0 13px;
   }
 
   &--wave-white:hover {
@@ -83,6 +84,7 @@
     border: 2px solid $color-white;
     background-color: transparent;
     color: $color-white;
+    margin: 0 13px;
   }
 
   &--wave-transparent:hover {
@@ -109,6 +111,12 @@
       white-space: nowrap;
       padding: 14px 60px;
       margin: 30px auto;
+    }
+
+    &--wave-white,
+    &--wave-transparent {
+      text-align: center;
+      margin: 20px 0;
     }
   }
 }

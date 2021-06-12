@@ -2,9 +2,8 @@
 
 .wave {
   height: 678px;
-  font-family: $font-family;
   margin: 265px 0 203px 0;
-
+  font-family: $font-family;
   background: url("../img/wave-bg.svg") no-repeat center,
     url("../img/wave-bg-gray.svg") no-repeat center;
 
@@ -28,8 +27,55 @@
   &__buttons {
     margin: 321px 0 0 187px;
   }
+}
 
-  &__btn {
-    margin: 0 13px;
+// Extra small devices (portrait phones, less than 576px)
+@include media(">=xs", "<=sm") {
+  .wave {
+    height: 760px;
+    margin: 50px 0;
+
+    // reset spacing
+    :is(.wave) :is(&__left, &__icon, &__text) {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__row {
+      padding: 250px 0;
+    }
+
+    &__left {
+    }
+
+    &__icon {
+      display: none;
+    }
+
+    &__text {
+      text-align: center;
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      margin: 40px 30px;
+    }
   }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@include media(">sm", "<=md") {
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@include media(">md", "<=lg") {
+}
+
+/* Large devices (desktops, 992px and up) */
+@include media(">lg", "<=xl") {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@include media(">=xl") {
 }
