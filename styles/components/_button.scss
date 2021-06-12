@@ -5,10 +5,6 @@
   display: inline-block;
   border: none;
   border-radius: 30px;
-<<<<<<< HEAD
-  @include transition(all 0.3s ease-in);
-=======
->>>>>>> old-state
 
   &--nav {
     @include drop-shadow(drop-shadow(0px 20px 25px rgba(000, 000, 000, 0.4)));
@@ -17,19 +13,11 @@
     margin-left: 20px;
     background-color: $color-woodsmoke;
     color: white;
-<<<<<<< HEAD
-    @include drop-shadow(0px 20px 25px rgba(000, 000, 000, 0.4));
-=======
->>>>>>> old-state
   }
 
   &--nav:hover {
     @include transition(all 0.3s ease-in);
     transform: scale(1.04);
-<<<<<<< HEAD
-    @include transitions(all 0.3s ease-in);
-=======
->>>>>>> old-state
     color: $color-white;
   }
 
@@ -43,11 +31,6 @@
     @include box-shadow(0 15px 35px rgba(0, 0, 0, 0.3));
     @include transition(all 0.3s ease-in);
     color: white;
-<<<<<<< HEAD
-    @include hover-shadow(0 15px 35px rgba(0, 0, 0, 0.3));
-    @include transitions(all 0.3s ease-in);
-=======
->>>>>>> old-state
   }
 
   &--transparent {
@@ -71,10 +54,6 @@
   &--transparent:hover {
     @include transition(all 0.3s ease-in);
     color: $color-shark;
-<<<<<<< HEAD
-    @include transitions(all 0.3s ease-in);
-=======
->>>>>>> old-state
   }
 
   &--card {
@@ -82,11 +61,6 @@
     @include drop-shadow(drop-shadow(0px 10px 10px rgba(000, 000, 000, 0.22)));
     padding: 11px 21px 8px 21px;
     color: $color-white;
-<<<<<<< HEAD
-    @include card-btn-gradient;
-    @include drop-shadow(0px 10px 10px rgba(000, 000, 000, 0.22));
-=======
->>>>>>> old-state
   }
 
   &--card:hover {
@@ -98,10 +72,6 @@
     padding: 18px 49px 13px 50px;
     background-color: $color-white;
     color: $color-tickle-me-pink;
-<<<<<<< HEAD
-    @include drop-shadow(0px 10px 10px rgba(000, 000, 000, 0.22));
-=======
->>>>>>> old-state
   }
 
   &--wave-white:hover {

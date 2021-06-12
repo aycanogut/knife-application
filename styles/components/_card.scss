@@ -64,6 +64,28 @@
     color: $color-slate-gray;
   }
 
+  // background-scale ve gradient
+  &::before {
+    @include transition(all 0.3s ease-in);
+    content: " ";
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover::before {
+    @include gradient-bg;
+    @include box-shadow(rgba(0, 0, 0, 0.3) 0px 25px 50px -12px);
+    @include transition(all 0.3s ease-in);
+    background-color: #fff;
+    transform: scaleY(1.1);
+  }
+
+  &__list {
+    display: block;
+  }
+
   // card-hover
   &:hover {
     .card__list-item {
@@ -100,34 +122,6 @@
       }
     }
   }
-}
-
-// background-scale ve gradient
-.card::before {
-  content: " ";
-  position: absolute;
-  border-radius: 10px;
-
-  width: 100%;
-  height: 100%;
-}
-
-.card:hover::before {
-  @include gradient-bg;
-  @include box-shadow(rgba(0, 0, 0, 0.3) 0px 25px 50px -12px);
-  @include transition(all 0.2s);
-<<<<<<< HEAD
-
-  transform: scaleY(1.1);
-  @include transitions(all 0.3s ease-in);
-=======
-  @include transition(all 0.3s ease-in);
-  transform: scaleY(1.1);
->>>>>>> old-state
-}
-
-.card__list {
-  display: block;
 }
 
 // Extra small devices (portrait phones, less than 576px)
