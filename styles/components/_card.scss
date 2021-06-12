@@ -114,11 +114,11 @@
 
 .card:hover::before {
   @include gradient-bg;
-  @include card-shadow--hover;
-  @include transition($card-bg-transition);
+  @include box-shadow(rgba(0, 0, 0, 0.3) 0px 25px 50px -12px);
+  @include transition(all 0.2s);
 
   transform: scaleY(1.1);
-  @include transitions($args);
+  @include transitions(all 0.3s ease-in);
 }
 
 .card__list {

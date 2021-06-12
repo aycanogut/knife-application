@@ -4,7 +4,7 @@
   display: inline-block;
   border: none;
   border-radius: 30px;
-  @include transition($args);
+  @include transition(all 0.3s ease-in);
 
   &--nav {
     padding: 17px 30px 14px 29px;
@@ -12,12 +12,12 @@
     margin-left: 20px;
     background-color: $color-woodsmoke;
     color: white;
-    @include drop-shadow($nav-btn);
+    @include drop-shadow(0px 20px 25px rgba(000, 000, 000, 0.4));
   }
 
   &--nav:hover {
     transform: scale(1.04);
-    @include transitions($args);
+    @include transitions(all 0.3s ease-in);
     color: $color-white;
   }
 
@@ -29,8 +29,8 @@
 
   &--colorful:hover {
     color: white;
-    @include hover-shadow;
-    @include transitions($args);
+    @include hover-shadow(0 15px 35px rgba(0, 0, 0, 0.3));
+    @include transitions(all 0.3s ease-in);
   }
 
   &--transparent {
@@ -53,14 +53,14 @@
 
   &--transparent:hover {
     color: $color-shark;
-    @include transitions($args);
+    @include transitions(all 0.3s ease-in);
   }
 
   &--card {
     padding: 11px 21px 8px 21px;
     color: $color-white;
     @include card-btn-gradient;
-    @include drop-shadow($card-btn);
+    @include drop-shadow(0px 10px 10px rgba(000, 000, 000, 0.22));
   }
 
   &--card:hover {
@@ -71,7 +71,7 @@
     padding: 18px 49px 13px 50px;
     background-color: $color-white;
     color: $color-tickle-me-pink;
-    @include drop-shadow($card-btn);
+    @include drop-shadow(0px 10px 10px rgba(000, 000, 000, 0.22));
   }
 
   &--wave-white:hover {
