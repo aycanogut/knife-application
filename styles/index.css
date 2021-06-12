@@ -1012,3 +1012,29 @@ a {
   .footer .text-bold {
     margin-left: 0;
     color: #24282a; }
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .footer {
+    height: auto;
+    font-family: "Roboto", sans-serif;
+    float: left;
+    width: 100%;
+    padding: 20px 0; }
+    .footer__row {
+      padding: 0;
+      margin: auto; }
+    .footer__list {
+      padding: 6px 0; }
+    .footer__title {
+      padding-bottom: 8px; }
+    .footer__text {
+      margin: 0;
+      padding: 20px 12px;
+      text-align: center; }
+    .footer .col-12 {
+      padding: 12px 20px; } }
+
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
