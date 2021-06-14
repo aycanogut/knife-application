@@ -885,14 +885,16 @@ a {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 577px) and (max-width: 768px) {
   .features {
-    margin: 250px 20px; }
+    margin: 250px 20px 0 20px; }
     .features__heading, .features__sub-text, .features__body {
       padding: 20px 0;
       margin: 0; }
     .features__sub-text {
       margin: 30px 0; }
     .features__card {
-      margin: 0 0 100px 0; } }
+      margin: 50px 0; }
+      .features__card-title {
+        padding: 20px 0; } }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 769px) and (max-width: 992px) {
