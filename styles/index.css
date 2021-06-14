@@ -707,9 +707,9 @@ a {
       flex-direction: column;
       z-index: 10;
       width: 100%;
-      height: 500px;
+      height: 100vh;
       margin: auto;
-      padding: 20px 0 0 0;
+      padding: 60px 0 0 0;
       background-color: #fff;
       box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1);
       transition: 0.4s; }
