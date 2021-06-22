@@ -58,7 +58,7 @@
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@include media(">sm", "<=md") {
+@include media(">=sm", "<=md") {
   .pricing {
     padding: 100px 20px 0 20px;
 
@@ -76,11 +76,26 @@
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@include media(">md", "<=lg") {
+@include media(">=md", "<=lg") {
+.pricing {
+  padding: 100px 20px 0 20px;
+
+  &__heading,
+  &__sub-text,
+  &__row {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__sub-text {
+    margin: 60px 0;
+  }
+}
 }
 
+
 /* Large devices (desktops, 992px and up) */
-@include media(">lg", "<=xl") {
+@include media(">=lg", "<=xl") {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

@@ -539,16 +539,24 @@ a {
       padding: 0 0 20px 0; } }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .card {
     width: auto;
-    height: auto; } }
+    height: auto; }
+    .card__price {
+      padding: 22px 40px 0 20px;
+      margin-left: auto; } }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .card {
     width: auto;
-    height: auto; } }
+    height: auto; }
+    .card__price {
+      padding: 18px 65px 0 0;
+      margin-left: auto; }
+    .card__text {
+      padding: 18px 0 30px 60px; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
@@ -883,7 +891,7 @@ a {
         padding: 10px 0; } }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .features {
     margin: 250px 20px 0 20px; }
     .features__heading, .features__sub-text, .features__body {
@@ -897,9 +905,9 @@ a {
         padding: 20px 0; } }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .features {
-    margin: 150px 20px; }
+    margin: 150px 20px 0 20px; }
     .features__heading, .features__sub-text, .features__body {
       padding: 0;
       margin: 0; }
@@ -944,7 +952,7 @@ a {
       text-align: center; } }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .pricing {
     padding: 100px 20px 0 20px; }
     .pricing__heading, .pricing__sub-text, .pricing__row {
@@ -954,6 +962,15 @@ a {
       margin: 50px 0; } }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width: 992px) {
+  .pricing {
+    padding: 100px 20px 0 20px; }
+    .pricing__heading, .pricing__sub-text, .pricing__row {
+      padding: 0;
+      margin: 0; }
+    .pricing__sub-text {
+      margin: 60px 0; } }
+
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
 .wave {
