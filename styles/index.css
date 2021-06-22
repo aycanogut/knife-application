@@ -518,11 +518,11 @@ a {
     .card__col:nth-child(2) {
       margin: 0; }
     .card__heading {
-      padding: 0 10px 0 20px; }
+      padding: 0 10px 0 10%; }
     .card__text {
-      padding: 0 20px; }
+      padding: 0 10%; }
     .card__body {
-      padding: 20px 20px 0 20px; }
+      padding: 20px 20px 0 10%; }
     .card__title {
       font-size: 32px; }
     .card__price {
@@ -539,16 +539,24 @@ a {
       padding: 0 0 20px 0; } }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .card {
     width: auto;
-    height: auto; } }
+    height: auto; }
+    .card__price {
+      padding: 22px 40px 0 20px;
+      margin-left: auto; } }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .card {
     width: auto;
-    height: auto; } }
+    height: auto; }
+    .card__price {
+      padding: 18px 65px 0 0;
+      margin-left: auto; }
+    .card__text {
+      padding: 18px 0 30px 60px; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
@@ -659,15 +667,17 @@ a {
     text-align: center;
     margin: 20px 0; } }
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .btn_def--colorful {
     box-shadow: 1px 1px white; } }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .btn_def--colorful {
     box-shadow: 1px 1px white; }
   .btn_def--colorful, .btn_def--transparent {
-    margin: 0 50px; } }
+    margin: 0 50px; }
+  .btn_def--wave-white, .btn_def--wave-transparent {
+    padding: 18px 25px; } }
 
 .navbar {
   padding: 0; }
@@ -695,7 +705,7 @@ a {
   .navbar__btn {
     color: #fff; }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .navbar {
     height: auto; }
     .navbar__brand {
@@ -707,9 +717,9 @@ a {
       flex-direction: column;
       z-index: 10;
       width: 100%;
-      height: 500px;
+      height: 100vh;
       margin: auto;
-      padding: 20px 0 0 0;
+      padding: 60px 0 0 0;
       background-color: #fff;
       box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1);
       transition: 0.4s; }
@@ -732,7 +742,7 @@ a {
         margin: 5px;
         background-color: #000; } }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .navbar__brand {
     padding: 20px 0 0 30px; }
   .navbar__menu {
@@ -883,21 +893,23 @@ a {
         padding: 10px 0; } }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .features {
-    margin: 250px 20px; }
+    margin: 250px 20px 0 20px; }
     .features__heading, .features__sub-text, .features__body {
       padding: 20px 0;
       margin: 0; }
     .features__sub-text {
       margin: 30px 0; }
     .features__card {
-      margin: 0 0 100px 0; } }
+      margin: 50px 0; }
+      .features__card-title {
+        padding: 20px 0; } }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .features {
-    margin: 150px 20px; }
+    margin: 150px 20px 0 20px; }
     .features__heading, .features__sub-text, .features__body {
       padding: 0;
       margin: 0; }
@@ -942,7 +954,25 @@ a {
       text-align: center; } }
 
 /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .pricing {
+    padding: 100px 20px 0 20px; }
+    .pricing__heading, .pricing__sub-text, .pricing__row {
+      padding: 0;
+      margin: 0; }
+    .pricing__sub-text {
+      margin: 50px 0; } }
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width: 992px) {
+  .pricing {
+    padding: 100px 20px 0 20px; }
+    .pricing__heading, .pricing__sub-text, .pricing__row {
+      padding: 0;
+      margin: 0; }
+    .pricing__sub-text {
+      margin: 60px 0; } }
+
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
 .wave {
@@ -983,7 +1013,48 @@ a {
       margin: 40px 30px; } }
 
 /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .wave {
+    padding: 0 20px; }
+    .wave .container-fluid {
+      height: 100%; }
+    :is(.wave) :is(.wave__left, .wave__text) {
+      margin: 0;
+      padding: 0; }
+    .wave__col {
+      display: flex;
+      align-items: center; }
+    .wave__buttons {
+      display: flex;
+      margin: 0 auto; }
+    .wave__row {
+      height: 100%; }
+    .wave__left {
+      display: flex;
+      align-self: flex-end; }
+    .wave__text {
+      text-align: center; } }
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width: 992px) {
+  .wave {
+    padding: 0 20px; }
+    .wave .container-fluid {
+      height: 100%; }
+    :is(.wave) :is(.wave__left, .wave__text) {
+      margin: 0;
+      padding: 0; }
+    .wave__col {
+      display: flex;
+      align-items: center; }
+    .wave__buttons {
+      display: flex;
+      margin: 0 auto; }
+    .wave__row {
+      height: 100%; }
+    .wave__text {
+      text-align: center; } }
+
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
 .footer {
@@ -1035,6 +1106,20 @@ a {
       padding: 12px 20px; } }
 
 /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .footer__row {
+    padding: 0 32px; }
+  .footer__text {
+    padding: 50px 0;
+    margin: 0 auto;
+    text-align: center; } }
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width: 992px) {
+  .footer__text {
+    padding: 50px 0 0 0;
+    margin: 0 auto;
+    text-align: center; } }
+
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */

@@ -45,8 +45,7 @@
       padding: 250px 0;
     }
 
-    &__left {
-    }
+
 
     &__icon {
       display: none;
@@ -65,15 +64,80 @@
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@include media(">sm", "<=md") {
+@include media(">=sm", "<=md") {
+  .wave {
+    padding: 0 20px;
+
+    .container-fluid {
+      height: 100%;
+    }
+        // reset spacing
+        :is(.wave) :is(&__left,  &__text) {
+          margin: 0;
+          padding: 0;
+        }
+
+        &__col {
+          display: flex;
+          align-items: center;
+        }
+
+        &__buttons {
+          display: flex;
+          margin: 0 auto;
+        }
+
+        &__row {
+          height: 100%;
+        }
+
+      &__left {
+        display: flex;
+        align-self: flex-end;
+      }
+
+        &__text {
+          text-align: center;
+        }
+  }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@include media(">md", "<=lg") {
+@include media(">=md", "<=lg") {
+  .wave {
+    padding: 0 20px;
+
+    .container-fluid {
+      height: 100%;
+    }
+        // reset spacing
+        :is(.wave) :is(&__left,  &__text) {
+          margin: 0;
+          padding: 0;
+        }
+
+        &__col {
+          display: flex;
+          align-items: center;
+        }
+
+        &__buttons {
+          display: flex;
+          margin: 0 auto;
+        }
+
+        &__row {
+          height: 100%;
+        }
+
+        &__text {
+          text-align: center;
+        }
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
-@include media(">lg", "<=xl") {
+@include media(">=lg", "<=xl") {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
