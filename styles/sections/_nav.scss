@@ -45,7 +45,7 @@
 
 // Extra small devices (portrait phones, less than 576px)
 
-@include media(">=xs", "<md") {
+@include media(">=xs", "<=md") {
   .navbar {
     height: auto;
 
@@ -97,7 +97,7 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@include media(">md", "<lg") {
+@include media(">=md", "<=lg") {
   .navbar {
     &__brand {
       padding: 20px 0 0 30px;
@@ -110,7 +110,7 @@
 }
 
 // Large devices (desktops, 992px and up)
-@include media(">lg", "<=xl") {
+@include media(">=lg", "<=xl") {
 }
 
 // Extra large devices (large desktops, 1200px and up)

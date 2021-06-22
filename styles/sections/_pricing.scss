@@ -61,6 +61,7 @@
 @include media(">sm", "<=md") {
   .pricing {
     padding: 100px 20px 0 20px;
+
     &__heading,
     &__sub-text,
     &__row {

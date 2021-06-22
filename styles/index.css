@@ -518,11 +518,11 @@ a {
     .card__col:nth-child(2) {
       margin: 0; }
     .card__heading {
-      padding: 0 10px 0 20px; }
+      padding: 0 10px 0 10%; }
     .card__text {
-      padding: 0 20px; }
+      padding: 0 10%; }
     .card__body {
-      padding: 20px 20px 0 20px; }
+      padding: 20px 20px 0 10%; }
     .card__title {
       font-size: 32px; }
     .card__price {
@@ -695,7 +695,7 @@ a {
   .navbar__btn {
     color: #fff; }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .navbar {
     height: auto; }
     .navbar__brand {
@@ -732,7 +732,7 @@ a {
         margin: 5px;
         background-color: #000; } }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .navbar__brand {
     padding: 20px 0 0 30px; }
   .navbar__menu {
