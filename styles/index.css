@@ -667,15 +667,17 @@ a {
     text-align: center;
     margin: 20px 0; } }
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .btn_def--colorful {
     box-shadow: 1px 1px white; } }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .btn_def--colorful {
     box-shadow: 1px 1px white; }
   .btn_def--colorful, .btn_def--transparent {
-    margin: 0 50px; } }
+    margin: 0 50px; }
+  .btn_def--wave-white, .btn_def--wave-transparent {
+    padding: 18px 25px; } }
 
 .navbar {
   padding: 0; }
@@ -1011,6 +1013,27 @@ a {
       margin: 40px 30px; } }
 
 /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .wave {
+    padding: 0 20px; }
+    .wave .container-fluid {
+      height: 100%; }
+    :is(.wave) :is(.wave__left, .wave__text) {
+      margin: 0;
+      padding: 0; }
+    .wave__col {
+      display: flex;
+      align-items: center; }
+    .wave__buttons {
+      display: flex;
+      margin: 0; }
+    .wave__row {
+      height: 100%; }
+    .wave__icon {
+      padding-right: 20px; }
+    .wave__text {
+      text-align: center; } }
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */

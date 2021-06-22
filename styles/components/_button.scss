@@ -122,7 +122,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@include media(">sm", "<=md") {
+@include media(">=sm", "<=md") {
   .btn_def {
     &--colorful {
       box-shadow: 1px 1px rgba(#fff, 1);
@@ -131,7 +131,7 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@include media(">md", "<=lg") {
+@include media(">=md", "<=lg") {
   .btn_def {
     &--colorful {
       box-shadow: 1px 1px rgba(#fff, 1);
@@ -141,10 +141,14 @@
     &--transparent {
       margin: 0 50px;
     }
+
+    &--wave-white, &--wave-transparent {
+      padding: 18px 25px;
+    }
   }
 }
 // Large devices (desktops, 992px and up)
-@include media(">lg", "<=xl") {
+@include media(">=lg", "<=xl") {
 }
 
 // Extra large devices (large desktops, 1200px and up)
