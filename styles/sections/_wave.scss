@@ -84,16 +84,17 @@
 
         &__buttons {
           display: flex;
-          margin: 0;
+          margin: 0 auto;
         }
 
         &__row {
           height: 100%;
         }
 
-        &__icon {
-          padding-right: 20px;
-        }
+      &__left {
+        display: flex;
+        align-self: flex-end;
+      }
 
         &__text {
           text-align: center;

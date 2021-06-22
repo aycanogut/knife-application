@@ -1026,11 +1026,12 @@ a {
       align-items: center; }
     .wave__buttons {
       display: flex;
-      margin: 0; }
+      margin: 0 auto; }
     .wave__row {
       height: 100%; }
-    .wave__icon {
-      padding-right: 20px; }
+    .wave__left {
+      display: flex;
+      align-self: flex-end; }
     .wave__text {
       text-align: center; } }
 
@@ -1086,6 +1087,20 @@ a {
       padding: 12px 20px; } }
 
 /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .footer__row {
+    padding: 0 32px; }
+  .footer__text {
+    padding: 50px 0;
+    margin: 0 auto;
+    text-align: center; } }
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width: 992px) {
+  .footer__text {
+    padding: 50px 0 0 0;
+    margin: 0 auto;
+    text-align: center; } }
+
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
