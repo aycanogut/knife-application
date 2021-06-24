@@ -111,6 +111,15 @@
 
 // Large devices (desktops, 992px and up)
 @include media(">=lg", "<=xl") {
+  .navbar {
+    &__brand {
+      padding: 20px 0 0 50px;
+    }
+
+    &__menu {
+      padding: 50px 50px 0 0;
+    }
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
