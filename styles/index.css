@@ -902,7 +902,8 @@ a {
     .features__sub-text {
       margin: 30px 0; }
     .features__card {
-      margin: 50px 0; }
+      margin: 50px auto;
+      width: 80%; }
       .features__card-title {
         padding: 20px 0; } }
 
@@ -916,7 +917,8 @@ a {
     .features__sub-text {
       margin: 60px 0; }
     .features__card {
-      margin: 20px 0 50px 0; } }
+      margin: 20px auto 50px auto;
+      width: 70%; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
