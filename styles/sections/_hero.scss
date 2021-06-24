@@ -116,6 +116,7 @@
 @include media(">=md", "<=lg") {
   .hero {
     text-align: center;
+
     &__left {
       padding: 60px 0 0 0;
     }
@@ -149,6 +150,12 @@
 }
 // Large devices (desktops, 992px and up)
 @include media(">=lg", "<=xl") {
+  .hero {
+    &__left {
+      margin: 20px;
+      padding: 25px;
+    }
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)

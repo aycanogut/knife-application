@@ -845,6 +845,11 @@ a {
     .hero__btn:is(.btn_def) {
       margin: 0 20px; } }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+  .hero__left {
+    margin: 20px;
+    padding: 25px; } }
+
 .features {
   font-family: "Roboto", sans-serif;
   text-align: center; }
