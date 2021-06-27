@@ -45,8 +45,6 @@
       padding: 250px 0;
     }
 
-
-
     &__icon {
       display: none;
     }
@@ -71,34 +69,34 @@
     .container-fluid {
       height: 100%;
     }
-        // reset spacing
-        :is(.wave) :is(&__left,  &__text) {
-          margin: 0;
-          padding: 0;
-        }
+    // reset spacing
+    :is(.wave) :is(&__left, &__text) {
+      margin: 0;
+      padding: 0;
+    }
 
-        &__col {
-          display: flex;
-          align-items: center;
-        }
+    &__col {
+      display: flex;
+      align-items: center;
+    }
 
-        &__buttons {
-          display: flex;
-          margin: 0 auto;
-        }
+    &__buttons {
+      display: flex;
+      margin: 0 auto;
+    }
 
-        &__row {
-          height: 100%;
-        }
+    &__row {
+      height: 100%;
+    }
 
-      &__left {
-        display: flex;
-        align-self: flex-end;
-      }
+    &__left {
+      display: flex;
+      align-self: flex-end;
+    }
 
-        &__text {
-          text-align: center;
-        }
+    &__text {
+      text-align: center;
+    }
   }
 }
 
@@ -110,34 +108,64 @@
     .container-fluid {
       height: 100%;
     }
-        // reset spacing
-        :is(.wave) :is(&__left,  &__text) {
-          margin: 0;
-          padding: 0;
-        }
+    // reset spacing
+    :is(.wave) :is(&__left, &__text) {
+      margin: 0;
+      padding: 0;
+    }
 
-        &__col {
-          display: flex;
-          align-items: center;
-        }
+    &__col {
+      display: flex;
+      align-items: center;
+    }
 
-        &__buttons {
-          display: flex;
-          margin: 0 auto;
-        }
+    &__buttons {
+      display: flex;
+      margin: 0 auto;
+    }
 
-        &__row {
-          height: 100%;
-        }
+    &__row {
+      height: 100%;
+    }
 
-        &__text {
-          text-align: center;
-        }
+    &__text {
+      text-align: center;
+    }
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @include media(">=lg", "<=xl") {
+  .wave {
+    padding: 0 20px;
+
+    .container-fluid {
+      height: 100%;
+    }
+    // reset spacing
+    :is(.wave) :is(&__left, &__text) {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__col {
+      display: flex;
+      align-items: center;
+    }
+
+    &__buttons {
+      display: flex;
+      margin: 0 auto;
+    }
+
+    &__row {
+      height: 100%;
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
