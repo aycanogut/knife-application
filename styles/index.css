@@ -1090,6 +1090,25 @@ a {
       text-align: center; } }
 
 /* Large devices (desktops, 992px and up) */
+@media (min-width: 991px) and (max-width: 1200px) {
+  .wave {
+    padding: 0 20px; }
+    .wave .container-fluid {
+      height: 100%; }
+    :is(.wave) :is(.wave__left, .wave__text) {
+      margin: 0;
+      padding: 0; }
+    .wave__col {
+      display: flex;
+      align-items: center; }
+    .wave__buttons {
+      display: flex;
+      margin: 0 auto; }
+    .wave__row {
+      height: 100%; }
+    .wave__text {
+      text-align: center; } }
+
 /* Extra large devices (large desktops, 1200px and up) */
 .footer {
   height: 317px;
