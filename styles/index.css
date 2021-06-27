@@ -541,16 +541,16 @@ a {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 768px) {
   .card {
-    width: auto;
+    width: 95%;
     height: auto; }
     .card__price {
       padding: 22px 40px 0 20px;
       margin-left: auto; } }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .card {
-    width: auto;
+    width: 80%;
     height: auto; }
     .card__price {
       padding: 18px 65px 0 0;
@@ -559,7 +559,28 @@ a {
       padding: 18px 0 30px 60px; } }
 
 /* Large devices (desktops, 992px and up) */
+@media (min-width: 991px) and (max-width: 1200px) {
+  .card {
+    width: 80%;
+    height: auto; }
+    .card__price {
+      padding: 18px 65px 0 0;
+      margin-left: auto; }
+    .card__text {
+      padding: 18px 0 30px 60px; } }
+
 /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .card {
+    width: 100%;
+    max-width: 570px;
+    height: auto; }
+    .card__price {
+      padding: 18px 12px 0 0;
+      margin-left: auto; }
+    .card__text {
+      padding: 18px 0 30px 60px; } }
+
 .icon {
   width: 20px;
   height: 20px; }
@@ -671,7 +692,7 @@ a {
   .btn_def--colorful {
     box-shadow: 1px 1px white; } }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .btn_def--colorful {
     box-shadow: 1px 1px white; }
   .btn_def--colorful, .btn_def--transparent {
@@ -742,13 +763,13 @@ a {
         margin: 5px;
         background-color: #000; } }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .navbar__brand {
     padding: 20px 0 0 30px; }
   .navbar__menu {
     padding: 50px 30px 0 0; } }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 991px) and (max-width: 1200px) {
   .navbar__brand {
     padding: 20px 0 0 50px; }
   .navbar__menu {
@@ -826,7 +847,7 @@ a {
     .hero__btn:nth-child(2) {
       margin: 0 0 0 20px; } }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .hero {
     text-align: center; }
     .hero__left {
@@ -845,7 +866,7 @@ a {
     .hero__btn:is(.btn_def) {
       margin: 0 20px; } }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 991px) and (max-width: 1200px) {
   .hero__left {
     margin: 20px;
     padding: 25px; } }
@@ -919,7 +940,7 @@ a {
         padding: 20px 0; } }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .features {
     margin: 150px 20px 0 20px; }
     .features__heading, .features__sub-text, .features__body {
@@ -977,7 +998,7 @@ a {
       margin: 50px 0; } }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .pricing {
     padding: 100px 20px 0 20px; }
     .pricing__heading, .pricing__sub-text, .pricing__row {
@@ -1049,7 +1070,7 @@ a {
       text-align: center; } }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .wave {
     padding: 0 20px; }
     .wave .container-fluid {
@@ -1128,7 +1149,7 @@ a {
     text-align: center; } }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .footer__text {
     padding: 50px 0 0 0;
     margin: 0 auto;
