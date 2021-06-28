@@ -171,6 +171,35 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @include media(">=xl") {
   .wave {
-    background-size: cover;
+    padding: 0 20px;
+    background-size: 100% cover;
+
+    .container-fluid {
+      height: 100%;
+    }
+    // reset spacing
+    :is(.wave) :is(&__left, &__text) {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__buttons {
+      display: flex;
+      margin: 0 auto;
+    }
+
+    &__row {
+      height: 100%;
+    }
+
+    &__text {
+      text-align: center;
+    }
   }
 }
