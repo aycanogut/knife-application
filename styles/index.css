@@ -576,7 +576,7 @@ a {
     max-width: 570px;
     height: auto; }
     .card__price {
-      padding: 18px 12px 0 0;
+      padding: 18px 60px 0 0;
       margin-left: auto; }
     .card__text {
       padding: 18px 0 30px 60px; } }
@@ -778,29 +778,26 @@ a {
 .navbar-show {
   left: 0; }
 
-.hero__left {
-  padding: 142px 0 0 121px; }
-
-.hero__text {
-  margin: 42px 0 31px 0;
-  color: #24282a;
-  margin-left: -1px; }
-
-.hero__sub-text {
-  padding-bottom: 47px;
-  letter-spacing: 0.4px;
-  color: #939fa4; }
-
-.hero__btn:nth-child(2) {
-  margin-left: 18px; }
-
-.hero__right {
-  margin-left: 350px; }
-
-.hero__screen {
-  position: absolute;
-  top: -45px;
-  right: 0px; }
+.hero {
+  height: 65vh; }
+  .hero__left {
+    padding: 142px 0 0 121px; }
+  .hero__text {
+    margin: 42px 0 31px 0;
+    color: #24282a;
+    margin-left: -1px; }
+  .hero__sub-text {
+    padding-bottom: 47px;
+    letter-spacing: 0.4px;
+    color: #939fa4; }
+  .hero__btn:nth-child(2) {
+    margin-left: 18px; }
+  .hero__right {
+    margin-left: 350px; }
+  .hero__screen {
+    position: absolute;
+    top: -45px;
+    right: 0px; }
 
 @media (min-width: 320px) and (max-width: 576px) {
   .hero__text {
@@ -1112,7 +1109,24 @@ a {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .wave {
-    background-size: cover; } }
+    padding: 0 20px;
+    background-size: 100% cover; }
+    .wave .container-fluid {
+      height: 100%; }
+    :is(.wave) :is(.wave__left, .wave__text) {
+      margin: 0;
+      padding: 0; }
+    .wave__col {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .wave__buttons {
+      display: flex;
+      margin: 0 auto; }
+    .wave__row {
+      height: 100%; }
+    .wave__text {
+      text-align: center; } }
 
 .footer {
   height: 317px;
