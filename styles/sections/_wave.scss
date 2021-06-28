@@ -170,4 +170,7 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @include media(">=xl") {
+  .wave {
+    background-size: cover;
+  }
 }
