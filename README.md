@@ -9,6 +9,7 @@ It's a single-page landing page creation platform.It made by HTML and CSS. SASS 
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)  
 * [SASS](https://sass-lang.com/)  
 * [Bootstrap](https://getbootstrap.com/)  
+* [Purge CSS](https://purgecss.com/)  
 * [include-media](https://github.com/eduardoboucas/include-media)  
 #### [Demo](https://knife-application.vercel.app/)
 ##### [Original Design on Figma Community](https://www.figma.com/file/9hHMgCNj6mKCQ7K4CmNpXj/Knife-Application---Mobile-App-Landing-Page-Template-by-PanoplyStore)
