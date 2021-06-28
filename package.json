@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A clone website project building with HTML, CSS and Bootstrap. It's still on process.  Original design is located on assets/prototype directory.",
   "scripts": {
-    "compile:sass": "live-server & node-sass styles/index.scss styles/index.css -w --browser 'FirefoxDeveloperEdition'"
-
+    "compile:sass": "live-server & node-sass styles/index.scss styles/index.css -w --browser 'FirefoxDeveloperEdition'",
+    "purgecss": "purgecss --css styles/index.css --content index.html -o styles/index.css"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "node-sass": "^5.0.0"
   },
   "dependencies": {
-    "animate.css": "^4.1.1"
+    "animate.css": "^4.1.1",
+    "purgecss": "^4.0.3"
   }
 }
