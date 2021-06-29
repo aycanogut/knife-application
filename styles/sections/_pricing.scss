@@ -5,7 +5,6 @@
 
   &__heading {
     text-align: center;
-    padding: 200px 200px 0 200px;
   }
 
   &__heading-text,
@@ -39,6 +38,10 @@
       margin: 0;
     }
 
+    &__heading {
+      padding-top: 50px;
+    }
+
     &__sub-text {
       padding: 50px 0;
     }
@@ -69,6 +72,10 @@
       margin: 0;
     }
 
+    &__heading {
+      padding-top: 50px;
+    }
+
     &__sub-text {
       margin: 50px 0;
     }
@@ -77,27 +84,36 @@
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @include media(">=md", "<=lg") {
-.pricing {
-  padding: 100px 20px 0 20px;
+  .pricing {
+    padding: 100px 20px 0 20px;
 
-  &__heading,
-  &__sub-text,
-  &__row {
-    padding: 0;
-    margin: 0;
-  }
+    &__heading,
+    &__sub-text,
+    &__row {
+      padding: 0;
+      margin: 0;
+    }
 
-  &__sub-text {
-    margin: 60px 0;
+    &__sub-text {
+      margin: 60px 0;
+    }
   }
 }
-}
-
 
 /* Large devices (desktops, 992px and up) */
 @include media(">=lg", "<=xl") {
+  .pricing {
+    &__heading {
+      padding-top: 120px;
+    }
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @include media(">=xl") {
+  .pricing {
+    &__heading {
+      padding-top: 200px;
+    }
+  }
 }
