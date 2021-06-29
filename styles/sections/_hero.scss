@@ -1,8 +1,6 @@
 // hero
 
 .hero {
-  height: 65vh;
-
   &__left {
     padding: 142px 0 0 121px;
   }
@@ -162,4 +160,7 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @include media(">=xl") {
+  .hero {
+    height: 100vh;
+  }
 }
