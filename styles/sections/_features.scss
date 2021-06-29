@@ -6,8 +6,6 @@
 
   &__heading {
     text-align: center;
-    padding: 0 200px 0 200px;
-    padding-top: 133px;
   }
 
   &__heading-text,
@@ -62,6 +60,10 @@
       margin: 0;
     }
 
+    &__heading {
+      padding-top: 80px;
+    }
+
     &__sub-text {
       margin: 10px 0 0 0;
     }
@@ -85,6 +87,10 @@
     &__body {
       padding: 20px 0;
       margin: 0;
+    }
+
+    &__heading {
+      padding-top: 120px;
     }
 
     &__sub-text {
@@ -114,6 +120,10 @@
       margin: 0;
     }
 
+    &__heading {
+      padding-top: 120px;
+    }
+
     &__sub-text {
       margin: 60px 0;
     }
@@ -127,8 +137,18 @@
 
 /* Large devices (desktops, 992px and up) */
 @include media(">=lg", "<=xl") {
+  .features {
+    &__heading {
+      padding-top: 120px;
+    }
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @include media(">=xl") {
+  .features {
+    &__heading {
+      padding-top: 120px;
+    }
+  }
 }
