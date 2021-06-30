@@ -966,7 +966,7 @@ a {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 991px) and (max-width: 1200px) {
   .features__heading {
-    padding-top: 120px; } }
+    padding-top: 400px; } }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
