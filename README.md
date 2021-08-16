@@ -15,3 +15,6 @@ It's a single-page landing page creation platform.It made by HTML and CSS. SASS 
 ##### [Original Design on Figma Community](https://www.figma.com/file/9hHMgCNj6mKCQ7K4CmNpXj/Knife-Application---Mobile-App-Landing-Page-Template-by-PanoplyStore)
 <br>
 
+## License
+
+Licensed under the MIT license, see [LICENSE](https://github.com/aycanogut/knife-application/blob/master/LICENSE) for details.
